@@ -549,6 +549,19 @@ export const en = {
     },
   },
 
+  // Not Found Page
+  notFound: {
+    title: "Oops! Page Not Found",
+    description: "The page you're looking for seems to have wandered off. Let us help you find your way back to our beautiful collection.",
+    goHome: "Go to Homepage",
+    shopNow: "Shop Now",
+    exploreProducts: "Explore Products",
+    goBack: "Go Back",
+    helpTitle: "Need Help Finding Something?",
+    helpDescription: "Our team is here to assist you. Feel free to reach out if you have any questions.",
+    contactUs: "Contact Us",
+  },
+
   // Common
   common: {
     loading: "Loading...",

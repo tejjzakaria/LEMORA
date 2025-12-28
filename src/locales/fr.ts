@@ -549,6 +549,19 @@ export const fr = {
     },
   },
 
+  // Not Found Page
+  notFound: {
+    title: "Oups ! Page Introuvable",
+    description: "La page que vous recherchez semble s'être égarée. Laissez-nous vous aider à retrouver le chemin vers notre belle collection.",
+    goHome: "Aller à l'Accueil",
+    shopNow: "Acheter Maintenant",
+    exploreProducts: "Explorer les Produits",
+    goBack: "Retour",
+    helpTitle: "Besoin d'Aide pour Trouver Quelque Chose ?",
+    helpDescription: "Notre équipe est là pour vous aider. N'hésitez pas à nous contacter si vous avez des questions.",
+    contactUs: "Nous Contacter",
+  },
+
   // Common
   common: {
     loading: "Chargement...",

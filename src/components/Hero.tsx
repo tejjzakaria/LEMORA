@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ParallaxSection } from "@/components/animations/ParallaxSection";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 
@@ -20,16 +19,14 @@ const Hero = () => {
       {/* Animated Gradient Background */}
       <div className="absolute inset-0 bg-gradient-hero-bold bg-gradient-animated animate-gradient-shift" />
 
-      {/* Parallax Background Image */}
-      <ParallaxSection speed={0.5}>
-        <div className="absolute inset-0">
-          <img
-            src="/hero.webp"
-            alt="Lemora Cosmetics luxury products collection"
-            className="w-full h-full object-cover opacity-30"
-          />
-        </div>
-      </ParallaxSection>
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src="/hero.webp"
+          alt="Lemora Cosmetics luxury products collection"
+          className="w-full h-full object-cover opacity-30"
+        />
+      </div>
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
