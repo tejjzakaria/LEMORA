@@ -75,7 +75,7 @@ const Hero = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 relative z-10 pt-24">
+      <div className="container mx-auto px-6 relative z-10 pt-32">
         <div className="max-w-2xl">
           {/* Subtitle */}
           <motion.span

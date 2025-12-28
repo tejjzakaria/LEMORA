@@ -253,6 +253,302 @@ export const en = {
     ],
   },
 
+  // Testimonials
+  testimonials: {
+    subtitle: "Customer Reviews",
+    title: "What Our Customers Say",
+    description: "Real experiences from real customers who love our products.",
+  },
+
+  // Trust Badges
+  trustBadges: {
+    natural: {
+      title: "100% Natural",
+      description: "Pure ingredients",
+    },
+    quality: {
+      title: "Premium Quality",
+      description: "Made in Morocco",
+    },
+    crueltyFree: {
+      title: "Cruelty-Free",
+      description: "Never tested on animals",
+    },
+    freeShipping: {
+      title: "Free Shipping",
+      description: "On all orders",
+    },
+    secure: {
+      title: "Secure Payment",
+      description: "100% protected",
+    },
+    returns: {
+      title: "Easy Returns",
+      description: "30-day guarantee",
+    },
+  },
+
+  // Social Gallery
+  socialGallery: {
+    subtitle: "Instagram",
+    title: "Follow Our Journey",
+    description: "Join our community and discover daily beauty inspiration, product highlights, and exclusive behind-the-scenes content.",
+    followButton: "Follow Us",
+  },
+
+  // How It Works
+  howItWorks: {
+    subtitle: "Simple Process",
+    title: "How It Works",
+    description: "Getting your favorite products is easy. Follow these simple steps and enjoy fast delivery across Morocco.",
+    steps: [
+      {
+        title: "Browse Collection",
+        description: "Explore our curated selection of premium natural oils and cosmetics.",
+      },
+      {
+        title: "Select Products",
+        description: "Choose your favorite items and add them to your order.",
+      },
+      {
+        title: "Order via WhatsApp",
+        description: "Complete your purchase through WhatsApp or our order form.",
+      },
+      {
+        title: "Fast Delivery",
+        description: "Receive your products quickly with free shipping across Morocco.",
+      },
+    ],
+  },
+
+  // Ingredients Spotlight
+  ingredients: {
+    subtitle: "Pure & Natural",
+    title: "Our Star Ingredients",
+    description: "We carefully select the finest natural ingredients, each chosen for its proven benefits and transformative properties.",
+    items: [
+      {
+        title: "Argan Oil",
+        description: "Morocco's liquid gold, rich in vitamin E and fatty acids.",
+        benefits: "Deeply moisturizes, reduces fine lines, and restores natural shine.",
+      },
+      {
+        title: "Essential Oils",
+        description: "Pure botanical extracts for therapeutic benefits.",
+        benefits: "Soothes skin, promotes relaxation, and provides natural aromatherapy.",
+      },
+      {
+        title: "Natural Extracts",
+        description: "Plant-based nutrients for enhanced nourishment.",
+        benefits: "Revitalizes skin, provides antioxidant protection, and boosts radiance.",
+      },
+      {
+        title: "Vitamin Blend",
+        description: "Essential vitamins for skin and hair health.",
+        benefits: "Strengthens, repairs, and protects against environmental damage.",
+      },
+    ],
+  },
+
+  // FAQ
+  faq: {
+    subtitle: "Got Questions?",
+    title: "Frequently Asked Questions",
+    description: "Find answers to common questions about our products, shipping, and more.",
+    items: [
+      {
+        question: "How long does shipping take?",
+        answer: "We offer free shipping on all orders across Morocco. Delivery typically takes 2-5 business days depending on your location. Orders are processed within 24 hours.",
+      },
+      {
+        question: "What payment methods do you accept?",
+        answer: "We accept cash on delivery (COD) for all orders. You can also complete your order via WhatsApp where our team will guide you through the payment process.",
+      },
+      {
+        question: "Are your products really 100% natural?",
+        answer: "Yes! All our products are formulated with 100% natural ingredients. We never use harsh chemicals, parabens, or synthetic fragrances. Each product is carefully crafted using premium botanical oils and extracts.",
+      },
+      {
+        question: "How do I use the products?",
+        answer: "Each product comes with detailed usage instructions. Generally, apply a small amount to clean skin or hair, massage gently in circular motions, and use daily for best results. For specific guidance, contact us on WhatsApp.",
+      },
+      {
+        question: "What is your return policy?",
+        answer: "We offer a 30-day satisfaction guarantee. If you're not completely happy with your purchase, contact us within 30 days for a full refund or exchange. Products must be in original condition.",
+      },
+      {
+        question: "Do you ship internationally?",
+        answer: "Currently, we only ship within Morocco. We're working on expanding our shipping to international destinations soon. Follow us on social media for updates!",
+      },
+    ],
+  },
+
+  // Announcement Bar
+  announcementBar: {
+    freeShipping: "🚚 Free Shipping on All Orders Across Morocco",
+    naturalIngredients: "🌿 100% Natural Ingredients - No Harsh Chemicals",
+    premiumQuality: "✨ Premium Quality - Made with Care in Morocco",
+  },
+
+  // Product Quiz
+  productQuiz: {
+    title: "Find Your Perfect Products",
+    step: "Step",
+    of: "of",
+    back: "Back",
+    seeResults: "See Results",
+    resultsTitle: "Your Perfect Match!",
+    resultsDescription: "Based on your answers, we recommend these products for you:",
+    retake: "Retake Quiz",
+    questions: [
+      {
+        question: "What are you looking for?",
+        options: [
+          "Hair & Scalp Care",
+          "Facial Skincare",
+          "Body Care",
+          "Complete Beauty Routine",
+        ],
+      },
+      {
+        question: "What's your skin/hair type?",
+        options: [
+          "Dry - Needs deep hydration",
+          "Oily - Needs balance",
+          "Combination - Mixed zones",
+          "Normal - Well balanced",
+        ],
+      },
+      {
+        question: "What's your main goal?",
+        options: [
+          "Deep Hydration & Moisture",
+          "Repair & Strengthen",
+          "Natural Glow & Radiance",
+          "Volume & Thickness",
+        ],
+      },
+    ],
+  },
+
+  // Quiz CTA
+  quizCTA: {
+    title: "Not Sure What to Choose?",
+    description: "Take our quick 30-second quiz and get personalized product recommendations based on your unique needs.",
+    benefit1: "Personalized just for you",
+    benefit2: "Takes only 30 seconds",
+    benefit3: "Expert recommendations",
+    button: "Take the Quiz",
+    subtext: "✨ Free, no email required",
+  },
+
+  // Product Bundles
+  bundles: {
+    subtitle: "Special Offers",
+    title: "Curated Bundles & Gift Sets",
+    description: "Save up to 15% with our carefully curated product bundles. Perfect for gifting or treating yourself!",
+    popular: "Popular",
+    bestseller: "Bestseller",
+    premium: "Premium",
+    save: "Save",
+    youSave: "You save",
+    orderBundle: "Order Bundle",
+    viewDetails: "View Details",
+    freeShipping: "✓ Free shipping included",
+    customBundle: "Want a custom bundle?",
+    contactUs: "Contact Us",
+    whatsappMessage: "Hi! I'm interested in ordering the bundle:",
+    hairCare: {
+      name: "Complete Hair Care Ritual",
+      description: "Everything you need for healthy, shiny hair",
+      products: [
+        "Argan Oil Hair Treatment (100ml)",
+        "Rosemary Scalp Oil (50ml)",
+        "Natural Hair Serum (30ml)",
+      ],
+    },
+    skincare: {
+      name: "Complete Skincare Set",
+      description: "Full routine for radiant, glowing skin",
+      products: [
+        "Face Oil Blend (50ml)",
+        "Vitamin E Serum (30ml)",
+        "Moisturizing Body Oil (100ml)",
+      ],
+    },
+    luxury: {
+      name: "Luxury Collection",
+      description: "Our premium selection for head-to-toe care",
+      products: [
+        "Premium Argan Oil (100ml)",
+        "Complete Facial Care Set",
+        "Body Care Collection",
+        "Free Premium Gift Box",
+      ],
+    },
+  },
+
+  // Product Reviews
+  productReviews: {
+    title: "Customer Reviews",
+    basedOn: "Based on",
+    reviews: "reviews",
+    verified: "✓ Verified",
+    helpful: "Helpful",
+    showMore: "Show All Reviews",
+    showLess: "Show Less",
+  },
+
+  // Bundle Detail Page
+  bundleDetail: {
+    notFoundTitle: "Bundle Not Found",
+    notFoundDescription: "The bundle you're looking for doesn't exist.",
+    backToBundles: "Back to Bundles",
+    bundles: "Bundles",
+    save: "Save",
+    originalPrice: "Original Price",
+    youSave: "You save",
+    freeShipping: "Free shipping on all orders",
+    whatsIncluded: "What's Included",
+    benefits: "Bundle Benefits",
+    whatsappMessage: "Hi! I'm interested in ordering this bundle:",
+    bundle: "Bundle",
+    price: "Price",
+    name: "Name",
+    phone: "Phone",
+    address: "Address",
+    orderForm: {
+      title: "Complete Your Order",
+      subtitle: "Fill in your details below",
+      fullName: "Full Name",
+      fullNamePlaceholder: "Enter your full name",
+      phoneNumber: "Phone Number",
+      phonePlaceholder: "+212 XXX XXX XXX",
+      fullAddress: "Full Address",
+      addressPlaceholder: "Enter your complete address including street, city, and postal code",
+      orderNow: "Order Bundle Now",
+      processing: "Processing...",
+      secureCheckout: "Secure checkout - Your order will be processed immediately",
+    },
+    validation: {
+      requiredFields: "Please fill in all required fields",
+    },
+    error: {
+      title: "Order Failed",
+      message: "We couldn't process your order at the moment. Please check your internet connection and try again, or contact us directly.",
+    },
+    success: {
+      toast: "Order placed successfully! We'll contact you soon.",
+      message: "Thank you for your order! We've received your details and will contact you shortly to confirm delivery.",
+    },
+    cta: {
+      title: "Ready to Transform Your Beauty Routine?",
+      description: "Order this exclusive bundle now and enjoy premium quality products at an incredible price.",
+      orderNow: "Order Now",
+      askQuestion: "Ask a Question",
+    },
+  },
+
   // Common
   common: {
     loading: "Loading...",
@@ -261,6 +557,7 @@ export const en = {
     viewMore: "View More",
     learnMore: "Learn More",
     comingSoon: "Coming Soon",
+    home: "Home",
   },
 };
 

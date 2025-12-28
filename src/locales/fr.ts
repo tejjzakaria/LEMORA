@@ -253,6 +253,302 @@ export const fr = {
     ],
   },
 
+  // Testimonials
+  testimonials: {
+    subtitle: "Avis Clients",
+    title: "Ce Que Nos Clients Disent",
+    description: "Témoignages authentiques de clients qui adorent nos produits.",
+  },
+
+  // Trust Badges
+  trustBadges: {
+    natural: {
+      title: "100% Naturel",
+      description: "Ingrédients purs",
+    },
+    quality: {
+      title: "Qualité Premium",
+      description: "Fabriqué au Maroc",
+    },
+    crueltyFree: {
+      title: "Sans Cruauté",
+      description: "Jamais testé sur les animaux",
+    },
+    freeShipping: {
+      title: "Livraison Gratuite",
+      description: "Sur toutes les commandes",
+    },
+    secure: {
+      title: "Paiement Sécurisé",
+      description: "100% protégé",
+    },
+    returns: {
+      title: "Retours Faciles",
+      description: "Garantie 30 jours",
+    },
+  },
+
+  // Social Gallery
+  socialGallery: {
+    subtitle: "Instagram",
+    title: "Suivez Notre Parcours",
+    description: "Rejoignez notre communauté et découvrez quotidiennement de l'inspiration beauté, des mises en avant de produits et du contenu exclusif en coulisses.",
+    followButton: "Suivez-Nous",
+  },
+
+  // How It Works
+  howItWorks: {
+    subtitle: "Processus Simple",
+    title: "Comment Ça Marche",
+    description: "Obtenir vos produits préférés est facile. Suivez ces étapes simples et profitez d'une livraison rapide à travers le Maroc.",
+    steps: [
+      {
+        title: "Parcourir la Collection",
+        description: "Explorez notre sélection soignée d'huiles naturelles premium et de cosmétiques.",
+      },
+      {
+        title: "Sélectionner les Produits",
+        description: "Choisissez vos articles préférés et ajoutez-les à votre commande.",
+      },
+      {
+        title: "Commander via WhatsApp",
+        description: "Finalisez votre achat via WhatsApp ou notre formulaire de commande.",
+      },
+      {
+        title: "Livraison Rapide",
+        description: "Recevez vos produits rapidement avec livraison gratuite à travers le Maroc.",
+      },
+    ],
+  },
+
+  // Ingredients Spotlight
+  ingredients: {
+    subtitle: "Pur & Naturel",
+    title: "Nos Ingrédients Vedettes",
+    description: "Nous sélectionnons soigneusement les meilleurs ingrédients naturels, chacun choisi pour ses bienfaits prouvés et ses propriétés transformatrices.",
+    items: [
+      {
+        title: "Huile d'Argan",
+        description: "L'or liquide du Maroc, riche en vitamine E et en acides gras.",
+        benefits: "Hydrate en profondeur, réduit les rides et restaure la brillance naturelle.",
+      },
+      {
+        title: "Huiles Essentielles",
+        description: "Extraits botaniques purs aux bienfaits thérapeutiques.",
+        benefits: "Apaise la peau, favorise la relaxation et offre une aromathérapie naturelle.",
+      },
+      {
+        title: "Extraits Naturels",
+        description: "Nutriments d'origine végétale pour une nutrition améliorée.",
+        benefits: "Revitalise la peau, offre une protection antioxydante et booste l'éclat.",
+      },
+      {
+        title: "Complexe Vitaminé",
+        description: "Vitamines essentielles pour la santé de la peau et des cheveux.",
+        benefits: "Renforce, répare et protège contre les dommages environnementaux.",
+      },
+    ],
+  },
+
+  // FAQ
+  faq: {
+    subtitle: "Des Questions ?",
+    title: "Questions Fréquemment Posées",
+    description: "Trouvez des réponses aux questions courantes sur nos produits, la livraison et plus encore.",
+    items: [
+      {
+        question: "Combien de temps prend la livraison ?",
+        answer: "Nous offrons la livraison gratuite sur toutes les commandes à travers le Maroc. La livraison prend généralement 2 à 5 jours ouvrables selon votre localisation. Les commandes sont traitées dans les 24 heures.",
+      },
+      {
+        question: "Quels modes de paiement acceptez-vous ?",
+        answer: "Nous acceptons le paiement à la livraison (COD) pour toutes les commandes. Vous pouvez également finaliser votre commande via WhatsApp où notre équipe vous guidera dans le processus de paiement.",
+      },
+      {
+        question: "Vos produits sont-ils vraiment 100% naturels ?",
+        answer: "Oui ! Tous nos produits sont formulés avec des ingrédients 100% naturels. Nous n'utilisons jamais de produits chimiques agressifs, de parabènes ou de parfums synthétiques. Chaque produit est soigneusement élaboré avec des huiles botaniques premium et des extraits.",
+      },
+      {
+        question: "Comment utiliser les produits ?",
+        answer: "Chaque produit est livré avec des instructions d'utilisation détaillées. En général, appliquez une petite quantité sur la peau ou les cheveux propres, massez doucement par mouvements circulaires et utilisez quotidiennement pour de meilleurs résultats. Pour des conseils spécifiques, contactez-nous sur WhatsApp.",
+      },
+      {
+        question: "Quelle est votre politique de retour ?",
+        answer: "Nous offrons une garantie de satisfaction de 30 jours. Si vous n'êtes pas entièrement satisfait de votre achat, contactez-nous dans les 30 jours pour un remboursement complet ou un échange. Les produits doivent être dans leur état d'origine.",
+      },
+      {
+        question: "Livrez-vous à l'international ?",
+        answer: "Actuellement, nous livrons uniquement au Maroc. Nous travaillons à étendre notre livraison vers des destinations internationales prochainement. Suivez-nous sur les réseaux sociaux pour les mises à jour !",
+      },
+    ],
+  },
+
+  // Announcement Bar
+  announcementBar: {
+    freeShipping: "🚚 Livraison Gratuite sur Toutes les Commandes au Maroc",
+    naturalIngredients: "🌿 100% Ingrédients Naturels - Sans Produits Chimiques",
+    premiumQuality: "✨ Qualité Premium - Fabriqué avec Soin au Maroc",
+  },
+
+  // Product Quiz
+  productQuiz: {
+    title: "Trouvez Vos Produits Parfaits",
+    step: "Étape",
+    of: "sur",
+    back: "Retour",
+    seeResults: "Voir les Résultats",
+    resultsTitle: "Votre Match Parfait !",
+    resultsDescription: "Selon vos réponses, nous vous recommandons ces produits :",
+    retake: "Refaire le Quiz",
+    questions: [
+      {
+        question: "Que recherchez-vous ?",
+        options: [
+          "Soins Cheveux & Cuir Chevelu",
+          "Soins du Visage",
+          "Soins du Corps",
+          "Routine Beauté Complète",
+        ],
+      },
+      {
+        question: "Quel est votre type de peau/cheveux ?",
+        options: [
+          "Sèche - Besoin d'hydratation profonde",
+          "Grasse - Besoin d'équilibre",
+          "Mixte - Zones variées",
+          "Normale - Bien équilibrée",
+        ],
+      },
+      {
+        question: "Quel est votre objectif principal ?",
+        options: [
+          "Hydratation & Douceur Profonde",
+          "Réparation & Renforcement",
+          "Éclat & Luminosité Naturels",
+          "Volume & Épaisseur",
+        ],
+      },
+    ],
+  },
+
+  // Quiz CTA
+  quizCTA: {
+    title: "Pas Sûr de Quoi Choisir ?",
+    description: "Répondez à notre quiz rapide de 30 secondes et obtenez des recommandations de produits personnalisées selon vos besoins uniques.",
+    benefit1: "Personnalisé pour vous",
+    benefit2: "Seulement 30 secondes",
+    benefit3: "Recommandations d'experts",
+    button: "Faire le Quiz",
+    subtext: "✨ Gratuit, aucun email requis",
+  },
+
+  // Product Bundles
+  bundles: {
+    subtitle: "Offres Spéciales",
+    title: "Coffrets & Collections Curées",
+    description: "Économisez jusqu'à 15% avec nos collections de produits soigneusement sélectionnées. Parfait pour offrir ou se faire plaisir !",
+    popular: "Populaire",
+    bestseller: "Meilleure Vente",
+    premium: "Premium",
+    save: "Économisez",
+    youSave: "Vous économisez",
+    orderBundle: "Commander le Coffret",
+    viewDetails: "Voir les Détails",
+    freeShipping: "✓ Livraison gratuite incluse",
+    customBundle: "Vous voulez un coffret personnalisé ?",
+    contactUs: "Contactez-Nous",
+    whatsappMessage: "Bonjour ! Je suis intéressé(e) par le coffret :",
+    hairCare: {
+      name: "Rituel Capillaire Complet",
+      description: "Tout ce dont vous avez besoin pour des cheveux sains et brillants",
+      products: [
+        "Traitement Capillaire à l'Huile d'Argan (100ml)",
+        "Huile pour Cuir Chevelu au Romarin (50ml)",
+        "Sérum Capillaire Naturel (30ml)",
+      ],
+    },
+    skincare: {
+      name: "Ensemble Soins du Visage Complet",
+      description: "Routine complète pour une peau radieuse et éclatante",
+      products: [
+        "Mélange d'Huiles pour le Visage (50ml)",
+        "Sérum à la Vitamine E (30ml)",
+        "Huile Hydratante pour le Corps (100ml)",
+      ],
+    },
+    luxury: {
+      name: "Collection Luxe",
+      description: "Notre sélection premium pour des soins de la tête aux pieds",
+      products: [
+        "Huile d'Argan Premium (100ml)",
+        "Ensemble Soins du Visage Complet",
+        "Collection Soins du Corps",
+        "Coffret Cadeau Premium Gratuit",
+      ],
+    },
+  },
+
+  // Product Reviews
+  productReviews: {
+    title: "Avis Clients",
+    basedOn: "Basé sur",
+    reviews: "avis",
+    verified: "✓ Vérifié",
+    helpful: "Utile",
+    showMore: "Voir Tous les Avis",
+    showLess: "Voir Moins",
+  },
+
+  // Bundle Detail Page
+  bundleDetail: {
+    notFoundTitle: "Coffret Non Trouvé",
+    notFoundDescription: "Le coffret que vous recherchez n'existe pas.",
+    backToBundles: "Retour aux Coffrets",
+    bundles: "Coffrets",
+    save: "Économisez",
+    originalPrice: "Prix Original",
+    youSave: "Vous économisez",
+    freeShipping: "Livraison gratuite sur toutes les commandes",
+    whatsIncluded: "Contenu du Coffret",
+    benefits: "Avantages du Coffret",
+    whatsappMessage: "Bonjour ! Je suis intéressé(e) par ce coffret :",
+    bundle: "Coffret",
+    price: "Prix",
+    name: "Nom",
+    phone: "Téléphone",
+    address: "Adresse",
+    orderForm: {
+      title: "Complétez Votre Commande",
+      subtitle: "Remplissez vos informations ci-dessous",
+      fullName: "Nom Complet",
+      fullNamePlaceholder: "Entrez votre nom complet",
+      phoneNumber: "Numéro de Téléphone",
+      phonePlaceholder: "+212 XXX XXX XXX",
+      fullAddress: "Adresse Complète",
+      addressPlaceholder: "Entrez votre adresse complète incluant rue, ville et code postal",
+      orderNow: "Commander le Coffret",
+      processing: "Traitement...",
+      secureCheckout: "Paiement sécurisé - Votre commande sera traitée immédiatement",
+    },
+    validation: {
+      requiredFields: "Veuillez remplir tous les champs requis",
+    },
+    error: {
+      title: "Commande Échouée",
+      message: "Nous n'avons pas pu traiter votre commande pour le moment. Veuillez vérifier votre connexion internet et réessayer, ou contactez-nous directement.",
+    },
+    success: {
+      toast: "Commande passée avec succès ! Nous vous contacterons bientôt.",
+      message: "Merci pour votre commande ! Nous avons reçu vos informations et vous contacterons prochainement pour confirmer la livraison.",
+    },
+    cta: {
+      title: "Prêt à Transformer Votre Routine Beauté ?",
+      description: "Commandez ce coffret exclusif maintenant et profitez de produits de qualité premium à un prix incroyable.",
+      orderNow: "Commander Maintenant",
+      askQuestion: "Poser une Question",
+    },
+  },
+
   // Common
   common: {
     loading: "Chargement...",
@@ -261,5 +557,6 @@ export const fr = {
     viewMore: "Voir Plus",
     learnMore: "En Savoir Plus",
     comingSoon: "Bientôt Disponible",
+    home: "Accueil",
   },
 };

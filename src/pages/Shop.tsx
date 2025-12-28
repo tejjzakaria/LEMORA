@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useSearchParams } from "react-router-dom";
 import { useProductData } from "@/hooks/useProductData";
 import { ProductGrid } from "@/components/product/ProductGrid";
 import { FadeInWhenVisible } from "@/components/animations/FadeInWhenVisible";
@@ -13,8 +14,17 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const Shop = () => {
   const { products, loading, error } = useProductData();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const { t } = useLanguage();
+
+  // Read category from URL on mount
+  useEffect(() => {
+    const categoryParam = searchParams.get("category");
+    if (categoryParam) {
+      setSelectedCategory(categoryParam);
+    }
+  }, [searchParams]);
 
   // Get products based on selected category
   const getFilteredProducts = () => {
@@ -73,7 +83,7 @@ const Shop = () => {
     <div className="min-h-screen bg-background">
       <Header />
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-hero-bold bg-gradient-animated animate-gradient-shift relative overflow-hidden">
+      <section className="pt-40 pb-16 bg-gradient-hero-bold bg-gradient-animated animate-gradient-shift relative overflow-hidden">
         <motion.div
           className="absolute top-20 right-10 w-96 h-96 rounded-full bg-rose-gold/20 blur-3xl pointer-events-none"
           animate={{
@@ -111,7 +121,18 @@ const Shop = () => {
         <div className="container mx-auto px-6 relative z-10">
           {/* Category Filter Tabs */}
           <FadeInWhenVisible delay={0.2}>
-            <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="mb-16">
+            <Tabs
+              value={selectedCategory}
+              onValueChange={(value) => {
+                setSelectedCategory(value);
+                if (value === "all") {
+                  setSearchParams({});
+                } else {
+                  setSearchParams({ category: value });
+                }
+              }}
+              className="mb-16"
+            >
               <TabsList className="w-full justify-center flex-wrap h-auto gap-2 bg-transparent">
                 <TabsTrigger
                   value="all"

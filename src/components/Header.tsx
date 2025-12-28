@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50"
+      className="fixed top-[60px] left-0 right-0 z-50"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -100,18 +100,9 @@ const Header = () => {
             })}
           </nav>
 
-          {/* Language Switcher & CTA Button (Desktop) */}
+          {/* Language Switcher (Desktop) */}
           <div className="hidden lg:flex items-center gap-4">
             <LanguageSwitcher />
-            <Link to="/shop">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-2.5 bg-gradient-rose text-white text-sm tracking-wider uppercase rounded-sm shadow-glow font-body"
-              >
-                {t('header.shopNow')}
-              </motion.div>
-            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -163,18 +154,6 @@ const Header = () => {
               >
                 <LanguageSwitcher />
               </motion.div>
-
-              {/* Mobile CTA */}
-              <Link to="/shop">
-                <motion.div
-                  className="mt-4 px-6 py-3 bg-gradient-rose text-white text-sm tracking-wider uppercase rounded-sm shadow-glow font-body text-center"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: (navLinks.length + 1) * 0.1 }}
-                >
-                  {t('header.shopNow')}
-                </motion.div>
-              </Link>
             </nav>
           </motion.div>
         )}

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FadeInWhenVisible } from "@/components/animations/FadeInWhenVisible";
-import { Mail, Phone, MapPin, Clock, Facebook, Instagram, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Facebook, Instagram } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import siteConfig from "@/config/siteConfig";
@@ -29,7 +30,7 @@ const Contact = () => {
       description: t('contactPage.callDescription'),
     },
     {
-      icon: MessageCircle,
+      icon: WhatsAppIcon,
       title: t('contactPage.whatsappTitle'),
       value: contact.phone,
       href: `https://wa.me/${contact.whatsapp}`,
@@ -53,7 +54,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Header />
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-hero-bold bg-gradient-animated animate-gradient-shift relative overflow-hidden">
+      <section className="pt-40 pb-16 bg-gradient-hero-bold bg-gradient-animated animate-gradient-shift relative overflow-hidden">
         <motion.div
           className="absolute top-20 left-10 w-96 h-96 rounded-full bg-soft-pink/30 blur-3xl pointer-events-none"
           animate={{

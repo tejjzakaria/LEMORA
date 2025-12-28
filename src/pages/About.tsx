@@ -67,7 +67,7 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Header />
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-hero-bold bg-gradient-animated animate-gradient-shift relative overflow-hidden">
+      <section className="pt-40 pb-16 bg-gradient-hero-bold bg-gradient-animated animate-gradient-shift relative overflow-hidden">
         <motion.div
           className="absolute top-20 right-10 w-96 h-96 rounded-full bg-rose-gold/20 blur-3xl pointer-events-none"
           animate={{

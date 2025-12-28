@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, X } from "lucide-react";
+import { X } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import siteConfig from "@/config/siteConfig";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -35,7 +36,7 @@ const WhatsAppWidget = () => {
               {/* Tooltip content */}
               <div className="flex items-start gap-3">
                 <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
-                  <MessageCircle className="w-5 h-5 text-white" />
+                  <WhatsAppIcon className="w-5 h-5 text-white" />
                 </div>
                 <div className="flex-1 pt-1">
                   <p className="font-semibold text-foreground text-sm mb-1">
@@ -83,7 +84,7 @@ const WhatsAppWidget = () => {
         />
 
         {/* WhatsApp Icon */}
-        <MessageCircle className="w-8 h-8 text-white relative z-10" />
+        <WhatsAppIcon className="w-8 h-8 text-white relative z-10" />
 
         {/* Notification badge */}
         <motion.div

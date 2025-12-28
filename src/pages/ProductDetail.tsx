@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useProductData } from "@/hooks/useProductData";
 import { ProductGrid } from "@/components/product/ProductGrid";
+import ProductReviews from "@/components/ProductReviews";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import siteConfig from "@/config/siteConfig";
@@ -821,9 +822,18 @@ const ProductDetail = () => {
         </div>
       </section>
 
+      {/* Product Reviews */}
+      <section className="py-16">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <ProductReviews productId={product.id} />
+          </div>
+        </div>
+      </section>
+
       {/* Related Products */}
       {relatedProducts.length > 0 && (
-        <section className="py-16">
+        <section className="py-16 bg-gradient-subtle">
           <div className="container mx-auto px-6">
             <FadeInWhenVisible>
               <h2 className="font-heading text-3xl md:text-4xl mb-12 text-center">

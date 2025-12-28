@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { useProductData } from "@/hooks/useProductData";
 import { FadeInWhenVisible } from "@/components/animations/FadeInWhenVisible";
 import { ArrowRight } from "lucide-react";
@@ -70,17 +71,17 @@ const Categories = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {categories.map((category, index) => (
             <FadeInWhenVisible key={category.name} delay={index * 0.15}>
-              <motion.a
-                href={`#${category.name.toLowerCase().replace(/\s+/g, '-')}`}
-                className="group relative aspect-[3/4] block overflow-hidden rounded-sm shadow-card will-change-transform"
-                style={{ perspective: "1000px" }}
-                whileHover={{
-                  scale: 1.02,
-                  rotateY: 5,
-                  rotateX: -5,
-                }}
-                transition={{ duration: 0.4 }}
-              >
+              <Link to={`/shop?category=${encodeURIComponent(category.name)}`}>
+                <motion.div
+                  className="group relative aspect-[3/4] block overflow-hidden rounded-sm shadow-card will-change-transform"
+                  style={{ perspective: "1000px" }}
+                  whileHover={{
+                    scale: 1.02,
+                    rotateY: 5,
+                    rotateX: -5,
+                  }}
+                  transition={{ duration: 0.4 }}
+                >
                 {/* Background Image */}
                 <motion.img
                   src={category.image}
@@ -134,7 +135,8 @@ const Categories = () => {
                   }}
                   transition={{ duration: 0.3 }}
                 />
-              </motion.a>
+                </motion.div>
+              </Link>
             </FadeInWhenVisible>
           ))}
         </div>
