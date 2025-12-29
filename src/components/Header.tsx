@@ -8,6 +8,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isAnnouncementBarVisible, setIsAnnouncementBarVisible] = useState(true);
   const location = useLocation();
   const { t } = useLanguage();
 
@@ -30,9 +31,31 @@ const Header = () => {
     setIsMobileMenuOpen(false);
   }, [location]);
 
+  // Check announcement bar visibility
+  useEffect(() => {
+    const checkAnnouncementBar = () => {
+      const isClosed = sessionStorage.getItem('announcement-bar-closed');
+      setIsAnnouncementBarVisible(isClosed !== 'true');
+    };
+
+    checkAnnouncementBar();
+
+    // Listen for storage changes
+    window.addEventListener('storage', checkAnnouncementBar);
+
+    // Custom event for same-tab changes
+    const handleAnnouncementChange = () => checkAnnouncementBar();
+    window.addEventListener('announcement-bar-changed', handleAnnouncementChange);
+
+    return () => {
+      window.removeEventListener('storage', checkAnnouncementBar);
+      window.removeEventListener('announcement-bar-changed', handleAnnouncementChange);
+    };
+  }, []);
+
   return (
     <motion.header
-      className="fixed top-[60px] left-0 right-0 z-50"
+      className={`fixed ${isAnnouncementBarVisible ? 'top-[60px]' : 'top-0'} left-0 right-0 z-50 transition-all duration-500`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}

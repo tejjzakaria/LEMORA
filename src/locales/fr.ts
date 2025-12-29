@@ -562,6 +562,108 @@ export const fr = {
     contactUs: "Nous Contacter",
   },
 
+  // Privacy Policy
+  privacy: {
+    title: "Politique de Confidentialité",
+    subtitle: "Votre vie privée est importante pour nous. Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles.",
+    lastUpdated: "Dernière mise à jour : Décembre 2024",
+    introduction: "Chez Lemora Cosmetics, nous nous engageons à protéger votre vie privée et à assurer la sécurité de vos informations personnelles. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web et effectuez des achats.",
+    sections: {
+      collection: {
+        title: "Informations que Nous Collectons",
+        content: "Nous collectons les informations que vous nous fournissez directement lors de la passation d'une commande, notamment :\n\n• Nom et coordonnées (numéro de téléphone, adresse e-mail)\n• Adresse de livraison\n• Détails de commande et préférences\n• Historique de communication avec notre service client\n\nNous collectons également automatiquement certaines informations sur votre appareil, y compris des informations sur votre navigateur web, votre adresse IP, votre fuseau horaire et certains cookies installés sur votre appareil.",
+      },
+      usage: {
+        title: "Comment Nous Utilisons Vos Informations",
+        content: "Nous utilisons les informations que nous collectons pour :\n\n• Traiter et exécuter vos commandes\n• Communiquer avec vous concernant vos commandes et livraisons\n• Vous envoyer du matériel promotionnel (avec votre consentement)\n• Améliorer nos produits et services\n• Prévenir les transactions frauduleuses\n• Respecter les obligations légales\n\nNous ne vendrons jamais vos informations personnelles à des tiers.",
+      },
+      protection: {
+        title: "Comment Nous Protégeons Vos Informations",
+        content: "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos informations personnelles contre l'accès, la modification, la divulgation ou la destruction non autorisés. Cela comprend :\n\n• Chiffrement sécurisé des données\n• Évaluations de sécurité régulières\n• Accès limité aux informations personnelles\n• Traitement sécurisé des paiements\n\nToutefois, aucune méthode de transmission sur Internet n'est sécurisée à 100%, et nous ne pouvons garantir une sécurité absolue.",
+      },
+      disclosure: {
+        title: "Divulgation d'Informations",
+        content: "Nous pouvons partager vos informations avec :\n\n• Les prestataires de services de livraison pour exécuter vos commandes\n• Les processeurs de paiement pour traiter les transactions\n• Les prestataires de services qui nous aident à exploiter notre site web\n• Les forces de l'ordre lorsque la loi l'exige\n\nNous exigeons de tous les tiers qu'ils respectent la sécurité de vos données personnelles et les traitent conformément à la loi.",
+      },
+      cookies: {
+        title: "Cookies et Suivi",
+        content: "Nous utilisons des cookies et des technologies de suivi similaires pour :\n\n• Mémoriser vos préférences\n• Comprendre comment vous utilisez notre site web\n• Améliorer votre expérience de navigation\n• Analyser le trafic et les tendances du site web\n\nVous pouvez contrôler les cookies via les paramètres de votre navigateur. Cependant, la désactivation des cookies peut affecter votre capacité à utiliser certaines fonctionnalités de notre site web.",
+      },
+      rights: {
+        title: "Vos Droits",
+        content: "Vous avez le droit de :\n\n• Accéder aux informations personnelles que nous détenons sur vous\n• Demander la correction d'informations inexactes\n• Demander la suppression de vos informations personnelles\n• Vous opposer au traitement de vos informations personnelles\n• Demander la limitation du traitement\n• Portabilité des données\n\nPour exercer l'un de ces droits, veuillez nous contacter en utilisant les informations fournies sur notre page Contact.",
+      },
+    },
+    contact: {
+      title: "Nous Contacter à Propos de la Confidentialité",
+      description: "Si vous avez des questions concernant cette Politique de Confidentialité ou la manière dont nous traitons vos informations personnelles, n'hésitez pas à nous contacter.",
+      link: "Nous Contacter",
+    },
+  },
+
+  // Terms of Service
+  terms: {
+    title: "Conditions d'Utilisation",
+    subtitle: "Veuillez lire attentivement ces conditions avant d'utiliser nos services ou d'effectuer un achat.",
+    lastUpdated: "Dernière mise à jour : Décembre 2024",
+    introduction: "Bienvenue chez Lemora Cosmetics. En accédant à notre site web et en passant des commandes, vous acceptez d'être lié par ces Conditions d'Utilisation. Veuillez les lire attentivement avant d'effectuer un achat.",
+    sections: {
+      acceptance: {
+        title: "Acceptation des Conditions",
+        content: "En utilisant notre site web et nos services, vous reconnaissez avoir lu, compris et accepté d'être lié par ces Conditions d'Utilisation et notre Politique de Confidentialité. Si vous n'acceptez pas une partie de ces conditions, veuillez ne pas utiliser notre site web ou nos services.\n\nNous nous réservons le droit de modifier ces conditions à tout moment. Votre utilisation continue de nos services après la publication des modifications constitue une acceptation des conditions modifiées.",
+      },
+      orders: {
+        title: "Commandes et Achats",
+        content: "Lorsque vous passez une commande sur notre site web :\n\n• Vous faites une offre d'achat de produits aux prix indiqués\n• Nous nous réservons le droit d'accepter ou de refuser votre commande\n• La confirmation de commande ne garantit pas la disponibilité des produits\n• Nous vous contacterons si les produits ne sont pas disponibles\n• Toutes les commandes sont soumises à la disponibilité des produits\n\nVous devez fournir des informations exactes et complètes lors de la passation de commandes.",
+      },
+      pricing: {
+        title: "Tarification et Paiement",
+        content: "Tous les prix sont indiqués en Dirham Marocain (MAD) et incluent les taxes applicables sauf indication contraire.\n\n• Les prix sont susceptibles de changer sans préavis\n• Nous nous réservons le droit de corriger les erreurs de prix\n• Le paiement doit être effectué au moment de la commande ou à la livraison\n• Nous acceptons le paiement à la livraison et les virements bancaires\n• Les prix promotionnels sont valables pour la période spécifiée uniquement\n\nVous êtes responsable du paiement de tous les frais associés à votre commande.",
+      },
+      shipping: {
+        title: "Expédition et Livraison",
+        content: "Nous offrons des services de livraison dans tout le Maroc :\n\n• Les délais de livraison sont des estimations et ne sont pas garantis\n• La livraison gratuite peut être offerte sur les commandes au-dessus de certains montants\n• Les frais de livraison varient selon l'emplacement\n• Nous ne sommes pas responsables des retards causés par les transporteurs\n• Vous devez fournir des informations de livraison exactes\n• Le risque de perte vous est transféré lors de la livraison\n\nVeuillez inspecter votre commande à la livraison et signaler tout problème immédiatement.",
+      },
+      returns: {
+        title: "Retours et Remboursements",
+        content: "En raison de la nature des produits cosmétiques :\n\n• Toutes les ventes sont définitives pour des raisons d'hygiène et de sécurité\n• Nous ne pouvons accepter les retours de produits ouverts\n• Les produits endommagés ou défectueux peuvent être échangés dans les 48 heures suivant la livraison\n• Vous devez fournir une preuve photographique des dommages\n• Les remboursements sont traités dans un délai de 7 à 14 jours ouvrables\n• Les frais d'expédition ne sont pas remboursables\n\nContactez-nous immédiatement si vous recevez des produits endommagés ou incorrects.",
+      },
+      liability: {
+        title: "Limitation de Responsabilité",
+        content: "Dans toute la mesure permise par la loi :\n\n• Nous ne sommes pas responsables des dommages indirects, accessoires ou consécutifs\n• Notre responsabilité totale est limitée au prix d'achat du produit\n• Nous ne garantissons pas de résultats spécifiques de l'utilisation du produit\n• Utilisez les produits selon les instructions et avertissements\n• Arrêtez l'utilisation en cas d'irritation\n• Consultez un professionnel de la santé pour des préoccupations spécifiques\n\nVous utilisez nos produits à vos propres risques.",
+      },
+      intellectual: {
+        title: "Propriété Intellectuelle",
+        content: "Tout le contenu de notre site web, y compris :\n\n• Descriptions et images de produits\n• Logo et image de marque\n• Conception et mise en page du site web\n• Textes, graphiques et vidéos\n\nsont la propriété intellectuelle de Lemora Cosmetics et protégés par les lois sur le droit d'auteur et les marques. Vous ne pouvez pas utiliser, reproduire ou distribuer un contenu sans notre autorisation écrite.",
+      },
+    },
+    contact: {
+      title: "Questions sur les Conditions",
+      description: "Si vous avez des questions concernant ces Conditions d'Utilisation, veuillez nous contacter. Nous sommes là pour vous aider !",
+      link: "Nous Contacter",
+    },
+  },
+
+  // Footer
+  footer: {
+    description: "Cosmétiques naturels premium fabriqués avec soin. Découvrez le pouvoir de la nature pour une beauté intemporelle.",
+    quickLinks: "Liens Rapides",
+    contactInfo: "Informations de Contact",
+    followUs: "Suivez-Nous",
+    links: {
+      home: "Accueil",
+      shop: "Boutique",
+      about: "À Propos",
+      contact: "Contact",
+    },
+    legal: {
+      title: "Légal",
+      privacy: "Politique de Confidentialité",
+      terms: "Conditions d'Utilisation",
+    },
+    copyright: "© {year} {siteName}. Tous droits réservés.",
+  },
+
   // Common
   common: {
     loading: "Chargement...",

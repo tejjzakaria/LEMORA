@@ -48,6 +48,8 @@ const AnnouncementBar = () => {
   const handleClose = () => {
     setIsVisible(false);
     sessionStorage.setItem('announcement-bar-closed', 'true');
+    // Dispatch custom event to notify other components
+    window.dispatchEvent(new Event('announcement-bar-changed'));
   };
 
   if (!isVisible) return null;

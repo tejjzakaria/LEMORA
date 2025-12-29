@@ -562,6 +562,108 @@ export const en = {
     contactUs: "Contact Us",
   },
 
+  // Privacy Policy
+  privacy: {
+    title: "Privacy Policy",
+    subtitle: "Your privacy is important to us. Learn how we collect, use, and protect your personal information.",
+    lastUpdated: "Last Updated: December 2024",
+    introduction: "At Lemora Cosmetics, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and make purchases.",
+    sections: {
+      collection: {
+        title: "Information We Collect",
+        content: "We collect information that you provide directly to us when placing an order, including:\n\n• Name and contact information (phone number, email address)\n• Delivery address\n• Order details and preferences\n• Communication history with our customer service\n\nWe also automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies installed on your device.",
+      },
+      usage: {
+        title: "How We Use Your Information",
+        content: "We use the information we collect to:\n\n• Process and fulfill your orders\n• Communicate with you about your orders and deliveries\n• Send you promotional materials (with your consent)\n• Improve our products and services\n• Prevent fraudulent transactions\n• Comply with legal obligations\n\nWe will never sell your personal information to third parties.",
+      },
+      protection: {
+        title: "How We Protect Your Information",
+        content: "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. This includes:\n\n• Secure data encryption\n• Regular security assessments\n• Limited access to personal information\n• Secure payment processing\n\nHowever, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.",
+      },
+      disclosure: {
+        title: "Information Disclosure",
+        content: "We may share your information with:\n\n• Delivery service providers to fulfill your orders\n• Payment processors to process transactions\n• Service providers who assist us in operating our website\n• Law enforcement when required by law\n\nWe require all third parties to respect the security of your personal data and treat it in accordance with the law.",
+      },
+      cookies: {
+        title: "Cookies and Tracking",
+        content: "We use cookies and similar tracking technologies to:\n\n• Remember your preferences\n• Understand how you use our website\n• Improve your browsing experience\n• Analyze website traffic and trends\n\nYou can control cookies through your browser settings. However, disabling cookies may affect your ability to use certain features of our website.",
+      },
+      rights: {
+        title: "Your Rights",
+        content: "You have the right to:\n\n• Access the personal information we hold about you\n• Request correction of inaccurate information\n• Request deletion of your personal information\n• Object to processing of your personal information\n• Request restriction of processing\n• Data portability\n\nTo exercise any of these rights, please contact us using the information provided on our Contact page.",
+      },
+    },
+    contact: {
+      title: "Contact Us About Privacy",
+      description: "If you have any questions about this Privacy Policy or how we handle your personal information, please don't hesitate to contact us.",
+      link: "Contact Us",
+    },
+  },
+
+  // Terms of Service
+  terms: {
+    title: "Terms of Service",
+    subtitle: "Please read these terms carefully before using our services or making a purchase.",
+    lastUpdated: "Last Updated: December 2024",
+    introduction: "Welcome to Lemora Cosmetics. By accessing our website and placing orders, you agree to be bound by these Terms of Service. Please read them carefully before making a purchase.",
+    sections: {
+      acceptance: {
+        title: "Acceptance of Terms",
+        content: "By using our website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree with any part of these terms, please do not use our website or services.\n\nWe reserve the right to modify these terms at any time. Your continued use of our services after changes are posted constitutes acceptance of the modified terms.",
+      },
+      orders: {
+        title: "Orders and Purchases",
+        content: "When you place an order through our website:\n\n• You are making an offer to purchase products at the prices stated\n• We reserve the right to accept or decline your order\n• Order confirmation does not guarantee product availability\n• We will contact you if products are unavailable\n• All orders are subject to product availability\n\nYou must provide accurate and complete information when placing orders.",
+      },
+      pricing: {
+        title: "Pricing and Payment",
+        content: "All prices are listed in Moroccan Dirham (MAD) and include applicable taxes unless otherwise stated.\n\n• Prices are subject to change without notice\n• We reserve the right to correct pricing errors\n• Payment must be made at the time of order or upon delivery\n• We accept cash on delivery and bank transfers\n• Promotional prices are valid for the specified period only\n\nYou are responsible for paying all charges associated with your order.",
+      },
+      shipping: {
+        title: "Shipping and Delivery",
+        content: "We offer delivery services throughout Morocco:\n\n• Delivery times are estimates and not guaranteed\n• Free shipping may be offered on orders above certain amounts\n• Delivery charges vary by location\n• We are not responsible for delays caused by shipping carriers\n• You must provide accurate delivery information\n• Risk of loss passes to you upon delivery\n\nPlease inspect your order upon delivery and report any issues immediately.",
+      },
+      returns: {
+        title: "Returns and Refunds",
+        content: "Due to the nature of cosmetic products:\n\n• All sales are final for hygiene and safety reasons\n• We cannot accept returns of opened products\n• Damaged or defective products can be exchanged within 48 hours of delivery\n• You must provide photographic evidence of damage\n• Refunds are processed within 7-14 business days\n• Shipping costs are non-refundable\n\nContact us immediately if you receive damaged or incorrect products.",
+      },
+      liability: {
+        title: "Limitation of Liability",
+        content: "To the maximum extent permitted by law:\n\n• We are not liable for indirect, incidental, or consequential damages\n• Our total liability is limited to the purchase price of the product\n• We do not guarantee specific results from product use\n• Use products according to instructions and warnings\n• Discontinue use if irritation occurs\n• Consult a healthcare professional for specific concerns\n\nYou use our products at your own risk.",
+      },
+      intellectual: {
+        title: "Intellectual Property",
+        content: "All content on our website, including:\n\n• Product descriptions and images\n• Logo and branding\n• Website design and layout\n• Text, graphics, and videos\n\nare the intellectual property of Lemora Cosmetics and protected by copyright and trademark laws. You may not use, reproduce, or distribute any content without our written permission.",
+      },
+    },
+    contact: {
+      title: "Questions About Terms",
+      description: "If you have any questions about these Terms of Service, please contact us. We're here to help!",
+      link: "Contact Us",
+    },
+  },
+
+  // Footer
+  footer: {
+    description: "Premium natural cosmetics crafted with care. Experience the power of nature for timeless beauty.",
+    quickLinks: "Quick Links",
+    contactInfo: "Contact Info",
+    followUs: "Follow Us",
+    links: {
+      home: "Home",
+      shop: "Shop",
+      about: "About",
+      contact: "Contact",
+    },
+    legal: {
+      title: "Legal",
+      privacy: "Privacy Policy",
+      terms: "Terms of Service",
+    },
+    copyright: "© {year} {siteName}. All rights reserved.",
+  },
+
   // Common
   common: {
     loading: "Loading...",

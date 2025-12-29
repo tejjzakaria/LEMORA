@@ -20,8 +20,30 @@ const Footer = () => {
           </Link>
 
           {/* Description */}
-          <p className="font-body text-background/70 max-w-2xl leading-relaxed">
+          <p className="font-body text-background/70 max-w-2xl leading-relaxed mb-6">
             {t('footer.description')}
+          </p>
+
+          {/* Legal Links */}
+          <div className="flex gap-4 mb-6">
+            <Link
+              to="/privacy-policy"
+              className="font-body text-sm text-background/70 hover:text-background transition-colors"
+            >
+              {t('footer.legal.privacy')}
+            </Link>
+            <span className="text-background/30">•</span>
+            <Link
+              to="/terms-of-service"
+              className="font-body text-sm text-background/70 hover:text-background transition-colors"
+            >
+              {t('footer.legal.terms')}
+            </Link>
+          </div>
+
+          {/* Copyright */}
+          <p className="font-body text-sm text-background/60">
+            {t('footer.copyright', { year: new Date().getFullYear(), siteName })}
           </p>
         </div>
       </div>
