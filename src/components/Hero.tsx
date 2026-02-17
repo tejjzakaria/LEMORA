@@ -9,9 +9,9 @@ const Hero = () => {
 
   // Product images for floating circles
   const productImages = [
-    "https://lemoracosmetics.com/cdn/shop/files/MOCKUP4.png?v=1745189016&width=533",
-    "https://lemoracosmetics.com/cdn/shop/files/IMG_9845_1.jpg?v=1713770822&width=533",
-    "https://lemoracosmetics.com/cdn/shop/files/IMG_6695_1.jpg?v=1708824310&width=533",
+    "https://floriyacosmetics.com/cdn/shop/files/MOCKUP4.png?v=1745189016&width=533",
+    "https://floriyacosmetics.com/cdn/shop/files/IMG_9845_1.jpg?v=1713770822&width=533",
+    "https://floriyacosmetics.com/cdn/shop/files/IMG_6695_1.jpg?v=1708824310&width=533",
   ];
 
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src="/hero.webp"
-          alt="Lemora Cosmetics luxury products collection"
+          alt="Floriya Cosmetics luxury products collection"
           className="w-full h-full object-cover opacity-30"
         />
       </div>

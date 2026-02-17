@@ -42,7 +42,7 @@ export const fr = {
   about: {
     subtitle: "Notre Histoire",
     title: "Créé avec Passion & Soin",
-    description: "Chez Lemora, nous croyons que la beauté vient de la nature. Chaque produit est soigneusement formulé avec les meilleurs ingrédients naturels, vous garantissant le meilleur pour votre peau et vos cheveux.",
+    description: "Chez Floriya, nous croyons que la beauté vient de la nature. Chaque produit est soigneusement formulé avec les meilleurs ingrédients naturels, vous garantissant le meilleur pour votre peau et vos cheveux.",
     values: [
       "100% Ingrédients Naturels",
       "Sans Cruauté & Végétalien",
@@ -113,11 +113,11 @@ export const fr = {
   aboutPage: {
     heroSubtitle: "Notre Histoire",
     heroTitle: "La Beauté Née d'une Pure Passion",
-    heroDescription: "Découvrez la passion et le dévouement derrière Lemora",
+    heroDescription: "Découvrez la passion et le dévouement derrière Floriya",
     storyTitle: "Notre Histoire",
     storyParagraphs: [
-      "Chez Lemora, nous croyons que la vraie beauté vient de l'intérieur. Fondée avec une passion pour créer des cosmétiques naturels exceptionnels, nous combinons les meilleurs ingrédients botaniques avec des formulations traditionnelles pour offrir des produits qui non seulement subliment votre beauté naturelle, mais nourrissent également votre peau.",
-      "Chaque produit Lemora est élaboré avec soin, testé rigoureusement et conçu pour vous faire sentir confiant et radieux. Notre engagement envers la durabilité et les pratiques éthiques garantit que votre routine beauté s'aligne avec vos valeurs.",
+      "Chez Floriya, nous croyons que la vraie beauté vient de l'intérieur. Fondée avec une passion pour créer des cosmétiques naturels exceptionnels, nous combinons les meilleurs ingrédients botaniques avec des formulations traditionnelles pour offrir des produits qui non seulement subliment votre beauté naturelle, mais nourrissent également votre peau.",
+      "Chaque produit Floriya est élaboré avec soin, testé rigoureusement et conçu pour vous faire sentir confiant et radieux. Notre engagement envers la durabilité et les pratiques éthiques garantit que votre routine beauté s'aligne avec vos valeurs.",
       "Nous nous approvisionnons en ingrédients auprès de fournisseurs de confiance qui partagent nos valeurs de qualité, durabilité et approvisionnement éthique. Chaque produit subit des tests rigoureux pour s'assurer qu'il répond à nos normes d'excellence les plus élevées.",
     ],
     missionTitle: "Notre Mission",
@@ -567,7 +567,7 @@ export const fr = {
     title: "Politique de Confidentialité",
     subtitle: "Votre vie privée est importante pour nous. Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles.",
     lastUpdated: "Dernière mise à jour : Décembre 2024",
-    introduction: "Chez Lemora Cosmetics, nous nous engageons à protéger votre vie privée et à assurer la sécurité de vos informations personnelles. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web et effectuez des achats.",
+    introduction: "Chez Floriya Cosmetics, nous nous engageons à protéger votre vie privée et à assurer la sécurité de vos informations personnelles. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web et effectuez des achats.",
     sections: {
       collection: {
         title: "Informations que Nous Collectons",
@@ -606,7 +606,7 @@ export const fr = {
     title: "Conditions d'Utilisation",
     subtitle: "Veuillez lire attentivement ces conditions avant d'utiliser nos services ou d'effectuer un achat.",
     lastUpdated: "Dernière mise à jour : Décembre 2024",
-    introduction: "Bienvenue chez Lemora Cosmetics. En accédant à notre site web et en passant des commandes, vous acceptez d'être lié par ces Conditions d'Utilisation. Veuillez les lire attentivement avant d'effectuer un achat.",
+    introduction: "Bienvenue chez Floriya Cosmetics. En accédant à notre site web et en passant des commandes, vous acceptez d'être lié par ces Conditions d'Utilisation. Veuillez les lire attentivement avant d'effectuer un achat.",
     sections: {
       acceptance: {
         title: "Acceptation des Conditions",
@@ -634,7 +634,7 @@ export const fr = {
       },
       intellectual: {
         title: "Propriété Intellectuelle",
-        content: "Tout le contenu de notre site web, y compris :\n\n• Descriptions et images de produits\n• Logo et image de marque\n• Conception et mise en page du site web\n• Textes, graphiques et vidéos\n\nsont la propriété intellectuelle de Lemora Cosmetics et protégés par les lois sur le droit d'auteur et les marques. Vous ne pouvez pas utiliser, reproduire ou distribuer un contenu sans notre autorisation écrite.",
+        content: "Tout le contenu de notre site web, y compris :\n\n• Descriptions et images de produits\n• Logo et image de marque\n• Conception et mise en page du site web\n• Textes, graphiques et vidéos\n\nsont la propriété intellectuelle de Floriya Cosmetics et protégés par les lois sur le droit d'auteur et les marques. Vous ne pouvez pas utiliser, reproduire ou distribuer un contenu sans notre autorisation écrite.",
       },
     },
     contact: {

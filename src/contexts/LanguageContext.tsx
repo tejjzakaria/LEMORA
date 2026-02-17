@@ -17,7 +17,7 @@ interface LanguageProviderProps {
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
     // Get language from localStorage or default to English
-    const saved = localStorage.getItem('lemora-language');
+    const saved = localStorage.getItem('floriya-language');
     return (saved === 'en' || saved === 'fr' || saved === 'ar') ? saved : 'en';
   });
 
@@ -26,7 +26,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('lemora-language', lang);
+    localStorage.setItem('floriya-language', lang);
   };
 
   // Update document direction when language changes

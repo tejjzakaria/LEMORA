@@ -1,8 +1,8 @@
-# Lemora Elevated Elegance - Case Study
+# Floriya Elevated Elegance - Case Study
 
 ## Executive Summary
 
-Lemora Cosmetics is a luxury e-commerce platform showcasing premium Moroccan natural beauty products. Built as a modern single-page application with React and TypeScript, the platform delivers an elegant shopping experience with bilingual support, advanced animations, and seamless integrations.
+Floriya Cosmetics is a luxury e-commerce platform showcasing premium Moroccan natural beauty products. Built as a modern single-page application with React and TypeScript, the platform delivers an elegant shopping experience with bilingual support, advanced animations, and seamless integrations.
 
 **Project Metrics:**
 - ~12,000 lines of TypeScript code
@@ -16,7 +16,7 @@ Lemora Cosmetics is a luxury e-commerce platform showcasing premium Moroccan nat
 
 ## The Challenge
 
-Lemora Cosmetics needed a digital presence that would:
+Floriya Cosmetics needed a digital presence that would:
 
 1. **Reflect Brand Identity**: Convey luxury and elegance matching their premium natural products
 2. **Simplify Operations**: Minimize technical overhead without traditional backend infrastructure
@@ -462,7 +462,7 @@ src/
 
 ## Conclusion
 
-Lemora Elevated Elegance demonstrates that modern web technologies enable sophisticated e-commerce experiences without complex infrastructure. By leveraging React, TypeScript, and creative integrations, the platform delivers:
+Floriya Elevated Elegance demonstrates that modern web technologies enable sophisticated e-commerce experiences without complex infrastructure. By leveraging React, TypeScript, and creative integrations, the platform delivers:
 
 - **Enterprise-grade UX** with smooth animations and responsive design
 - **Cost-effective operations** without backend overhead
@@ -475,7 +475,7 @@ The project proves that thoughtful technology choices and creative problem-solvi
 
 ## Project Information
 
-**Repository**: Lemora Elevated Elegance
+**Repository**: Floriya Elevated Elegance
 **Technology**: React + TypeScript + Vite
 **Platform**: Vercel
 **Status**: Production Ready

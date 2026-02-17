@@ -42,7 +42,7 @@ export const en = {
   about: {
     subtitle: "Our Story",
     title: "Crafted with Passion & Care",
-    description: "At Lemora, we believe beauty comes from nature. Each product is carefully formulated using the finest natural ingredients, ensuring you receive only the best for your skin and hair.",
+    description: "At Floriya, we believe beauty comes from nature. Each product is carefully formulated using the finest natural ingredients, ensuring you receive only the best for your skin and hair.",
     values: [
       "100% Natural Ingredients",
       "Cruelty-Free & Vegan",
@@ -113,11 +113,11 @@ export const en = {
   aboutPage: {
     heroSubtitle: "Our Story",
     heroTitle: "Beauty Born from Pure Passion",
-    heroDescription: "Discover the passion and dedication behind Lemora",
+    heroDescription: "Discover the passion and dedication behind Floriya",
     storyTitle: "Our Story",
     storyParagraphs: [
-      "At Lemora, we believe that true beauty comes from within. Founded with a passion for creating exceptional natural cosmetics, we combine the finest botanical ingredients with traditional formulations to deliver products that not only enhance your natural beauty but also nurture your skin.",
-      "Every Lemora product is crafted with care, tested rigorously, and designed to make you feel confident and radiant. Our commitment to sustainability and ethical practices ensures that your beauty routine aligns with your values.",
+      "At Floriya, we believe that true beauty comes from within. Founded with a passion for creating exceptional natural cosmetics, we combine the finest botanical ingredients with traditional formulations to deliver products that not only enhance your natural beauty but also nurture your skin.",
+      "Every Floriya product is crafted with care, tested rigorously, and designed to make you feel confident and radiant. Our commitment to sustainability and ethical practices ensures that your beauty routine aligns with your values.",
       "We source our ingredients from trusted suppliers who share our values of quality, sustainability, and ethical sourcing. Each product undergoes rigorous testing to ensure it meets our high standards of excellence.",
     ],
     missionTitle: "Our Mission",
@@ -567,7 +567,7 @@ export const en = {
     title: "Privacy Policy",
     subtitle: "Your privacy is important to us. Learn how we collect, use, and protect your personal information.",
     lastUpdated: "Last Updated: December 2024",
-    introduction: "At Lemora Cosmetics, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and make purchases.",
+    introduction: "At Floriya Cosmetics, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and make purchases.",
     sections: {
       collection: {
         title: "Information We Collect",
@@ -606,7 +606,7 @@ export const en = {
     title: "Terms of Service",
     subtitle: "Please read these terms carefully before using our services or making a purchase.",
     lastUpdated: "Last Updated: December 2024",
-    introduction: "Welcome to Lemora Cosmetics. By accessing our website and placing orders, you agree to be bound by these Terms of Service. Please read them carefully before making a purchase.",
+    introduction: "Welcome to Floriya Cosmetics. By accessing our website and placing orders, you agree to be bound by these Terms of Service. Please read them carefully before making a purchase.",
     sections: {
       acceptance: {
         title: "Acceptance of Terms",
@@ -634,7 +634,7 @@ export const en = {
       },
       intellectual: {
         title: "Intellectual Property",
-        content: "All content on our website, including:\n\n• Product descriptions and images\n• Logo and branding\n• Website design and layout\n• Text, graphics, and videos\n\nare the intellectual property of Lemora Cosmetics and protected by copyright and trademark laws. You may not use, reproduce, or distribute any content without our written permission.",
+        content: "All content on our website, including:\n\n• Product descriptions and images\n• Logo and branding\n• Website design and layout\n• Text, graphics, and videos\n\nare the intellectual property of Floriya Cosmetics and protected by copyright and trademark laws. You may not use, reproduce, or distribute any content without our written permission.",
       },
     },
     contact: {

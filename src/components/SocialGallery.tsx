@@ -9,36 +9,36 @@ const SocialGallery = () => {
 
   const galleryImages = [
     {
-      url: "https://lemoracosmetics.com/cdn/shop/files/MOCKUP4.png?v=1745189016&width=533",
-      alt: "Lemora Product 1",
+      url: "https://floriyacosmetics.com/cdn/shop/files/MOCKUP4.png?v=1745189016&width=533",
+      alt: "Floriya Product 1",
     },
     {
       url: "/hero.webp",
-      alt: "Lemora Hero",
+      alt: "Floriya Hero",
     },
     {
-      url: "https://lemoracosmetics.com/cdn/shop/files/IMG_9845_1.jpg?v=1713770822&width=533",
-      alt: "Lemora Product 2",
+      url: "https://floriyacosmetics.com/cdn/shop/files/IMG_9845_1.jpg?v=1713770822&width=533",
+      alt: "Floriya Product 2",
     },
     {
-      url: "https://lemoracosmetics.com/cdn/shop/files/MOCKUP3.png?v=1745189088&width=533",
-      alt: "Lemora Product 3",
+      url: "https://floriyacosmetics.com/cdn/shop/files/MOCKUP3.png?v=1745189088&width=533",
+      alt: "Floriya Product 3",
     },
     {
-      url: "https://lemoracosmetics.com/cdn/shop/files/MOCKUP2.png?v=1745189126&width=533",
-      alt: "Lemora Product 4",
+      url: "https://floriyacosmetics.com/cdn/shop/files/MOCKUP2.png?v=1745189126&width=533",
+      alt: "Floriya Product 4",
     },
     {
-      url: "https://lemoracosmetics.com/cdn/shop/files/MOCKUP1.png?v=1745189149&width=533",
-      alt: "Lemora Product 5",
+      url: "https://floriyacosmetics.com/cdn/shop/files/MOCKUP1.png?v=1745189149&width=533",
+      alt: "Floriya Product 5",
     },
     {
-      url: "https://lemoracosmetics.com/cdn/shop/files/IMG_9843.jpg?v=1713770820&width=533",
-      alt: "Lemora Product 6",
+      url: "https://floriyacosmetics.com/cdn/shop/files/IMG_9843.jpg?v=1713770820&width=533",
+      alt: "Floriya Product 6",
     },
     {
-      url: "https://lemoracosmetics.com/cdn/shop/files/IMG_9847.jpg?v=1713770820&width=533",
-      alt: "Lemora Product 7",
+      url: "https://floriyacosmetics.com/cdn/shop/files/IMG_9847.jpg?v=1713770820&width=533",
+      alt: "Floriya Product 7",
     },
   ];
 

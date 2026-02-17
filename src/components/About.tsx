@@ -75,7 +75,7 @@ const About = () => {
                 <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-card">
                   <img
                     src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80"
-                    alt="Lemora Cosmetics brand story"
+                    alt="Floriya Cosmetics brand story"
                     className="w-full h-full object-cover"
                   />
                 </div>
