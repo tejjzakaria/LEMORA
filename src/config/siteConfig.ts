@@ -7,15 +7,15 @@
 
 export const siteConfig = {
   // ===== BASIC INFO =====
-  siteName: "Lemora Cosmetics",
+  siteName: "FLORIYA Cosmetics",
   tagline: "Luxury Beauty Reimagined",
   description: "Premium natural oils and cosmetics crafted with the finest botanical ingredients",
 
   // ===== CONTACT INFORMATION =====
   contact: {
-    email: "contact@lemoracosmetics.com",
-    phone: "+212 123 456 789",
-    whatsapp: "+212123456789", // No spaces or special characters
+    email: "contact@FLORIYAcosmetics.com",
+    phone: "+212 690-830144",
+    whatsapp: "+212690830144", // No spaces or special characters
     address: {
       street: "123 Beauty Avenue",
       city: "Casablanca",
@@ -24,11 +24,11 @@ export const siteConfig = {
     },
     // Social Media Links
     social: {
-      facebook: "https://facebook.com/lemoracosmetics",
+      facebook: "https://facebook.com/FLORIYAcosmetics",
       instagram: "https://www.instagram.com/floriyabodyoil/",
-      twitter: "https://twitter.com/lemoracosmetics",
-      tiktok: "https://tiktok.com/@lemoracosmetics",
-      youtube: "https://youtube.com/@lemoracosmetics",
+      twitter: "https://twitter.com/FLORIYAcosmetics",
+      tiktok: "https://tiktok.com/@FLORIYAcosmetics",
+      youtube: "https://youtube.com/@FLORIYAcosmetics",
     },
   },
 
@@ -44,8 +44,8 @@ export const siteConfig = {
     heroTitle: "Beauty Born from Pure Passion",
     heroSubtitle: "Our Story",
     story: [
-      "At Lemora, we believe that true beauty comes from within. Founded with a passion for creating exceptional natural cosmetics, we combine the finest botanical ingredients with traditional formulations to deliver products that not only enhance your natural beauty but also nurture your skin.",
-      "Every Lemora product is crafted with care, tested rigorously, and designed to make you feel confident and radiant. Our commitment to sustainability and ethical practices ensures that your beauty routine aligns with your values.",
+      "At FLORIYA, we believe that true beauty comes from within. Founded with a passion for creating exceptional natural cosmetics, we combine the finest botanical ingredients with traditional formulations to deliver products that not only enhance your natural beauty but also nurture your skin.",
+      "Every FLORIYA product is crafted with care, tested rigorously, and designed to make you feel confident and radiant. Our commitment to sustainability and ethical practices ensures that your beauty routine aligns with your values.",
       "We source our ingredients from trusted suppliers who share our values of quality, sustainability, and ethical sourcing. Each product undergoes rigorous testing to ensure it meets our high standards of excellence.",
     ],
     mission: {
@@ -83,7 +83,7 @@ export const siteConfig = {
 
   // ===== NEWSLETTER =====
   newsletter: {
-    title: "Join the Lemora Family",
+    title: "Join the FLORIYA Family",
     subtitle: "Stay Connected",
     description: "Subscribe for exclusive access to new launches, beauty tips, and special offers reserved just for you.",
     disclaimer: "By subscribing, you agree to receive marketing emails. Unsubscribe anytime.",
