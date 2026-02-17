@@ -5,7 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { mainProduct } from '@/lib/singleProduct';
 
 export default function SingleProductCTA() {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
 
   const scrollToCheckout = () => {
     const checkoutSection = document.getElementById('checkout');
@@ -30,7 +30,7 @@ export default function SingleProductCTA() {
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
+              className={`inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6 ${isRTL ? 'flex-row-reverse' : ''}`}
             >
               <Sparkles className="w-4 h-4" />
               <span className="text-sm font-medium">{t('singleProduct.cta.limitedOffer')}</span>
@@ -49,15 +49,15 @@ export default function SingleProductCTA() {
             {/* CTA Button */}
             <Button
               onClick={scrollToCheckout}
-              className="bg-white text-primary hover:bg-white/90 font-bold text-base md:text-lg px-6 md:px-8 py-5 md:py-6 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group active:scale-95"
+              className={`bg-white text-primary hover:bg-white/90 font-bold text-base md:text-lg px-6 md:px-8 py-5 md:py-6 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group active:scale-95 ${isRTL ? 'flex-row-reverse' : ''}`}
             >
               {t('singleProduct.cta.button', { price: mainProduct.price })}
-              <ArrowRight className="w-4 h-4 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className={`w-4 h-4 md:w-5 md:h-5 ${isRTL ? 'mr-2 group-hover:-translate-x-1 rotate-180' : 'ml-2 group-hover:translate-x-1'} transition-transform`} />
             </Button>
 
             {/* Trust indicators */}
             <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-6 md:mt-8 text-xs md:text-sm text-white/80">
-              <div className="flex items-center gap-2">
+              <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     fillRule="evenodd"
@@ -67,7 +67,7 @@ export default function SingleProductCTA() {
                 </svg>
                 {t('singleProduct.trustBadges.freeShipping')}
               </div>
-              <div className="flex items-center gap-2">
+              <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     fillRule="evenodd"
@@ -77,7 +77,7 @@ export default function SingleProductCTA() {
                 </svg>
                 {t('singleProduct.checkout.cod')}
               </div>
-              <div className="flex items-center gap-2">
+              <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     fillRule="evenodd"

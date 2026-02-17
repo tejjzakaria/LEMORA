@@ -10,7 +10,7 @@ import { useState, useRef, useEffect } from 'react';
 import { toast } from 'sonner';
 
 export default function SingleProductHero() {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
   const [selectedImage, setSelectedImage] = useState(0);
   const [formData, setFormData] = useState({
     name: '',
@@ -160,17 +160,19 @@ export default function SingleProductHero() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium"
+              className={`inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium ${isRTL ? 'flex-row-reverse float-right' : ''}`}
             >
               <Sparkles className="w-4 h-4" />
               {t('singleProduct.badge')}
             </motion.div>
+            {isRTL && <div className="clear-both" />}
 
             {/* Title */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
+              className={isRTL ? 'text-right' : ''}
             >
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground leading-tight">
                 {mainProduct.name}
@@ -185,7 +187,7 @@ export default function SingleProductHero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="text-base md:text-lg text-muted-foreground leading-relaxed"
+              className={`text-base md:text-lg text-muted-foreground leading-relaxed ${isRTL ? 'text-right' : ''}`}
             >
               {t('singleProduct.description')}
             </motion.p>
@@ -195,7 +197,7 @@ export default function SingleProductHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex items-baseline gap-3 md:gap-4"
+              className={isRTL ? 'text-right' : ''}
             >
               <span className="text-4xl sm:text-5xl font-bold text-primary">
                 {mainProduct.price} MAD
@@ -207,23 +209,23 @@ export default function SingleProductHero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
-              className="grid grid-cols-2 gap-3"
+              className={`grid grid-cols-2 gap-3 ${isRTL ? 'text-right' : ''}`}
             >
-              <div className="flex items-center gap-2 text-sm text-foreground">
-                <div className="w-1.5 h-1.5 bg-gradient-rose rounded-full" />
-                {t('singleProduct.features.natural')}
+              <div className={`flex items-center text-sm text-foreground ${isRTL ? 'flex-row-reverse gap-2 justify-end' : 'gap-2'}`}>
+                <div className="w-1.5 h-1.5 bg-gradient-rose rounded-full flex-shrink-0" />
+                <span>{t('singleProduct.features.natural')}</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-foreground">
-                <div className="w-1.5 h-1.5 bg-gradient-rose rounded-full" />
-                {t('singleProduct.features.handcrafted')}
+              <div className={`flex items-center text-sm text-foreground ${isRTL ? 'flex-row-reverse gap-2 justify-end' : 'gap-2'}`}>
+                <div className="w-1.5 h-1.5 bg-gradient-rose rounded-full flex-shrink-0" />
+                <span>{t('singleProduct.features.handcrafted')}</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-foreground">
-                <div className="w-1.5 h-1.5 bg-gradient-rose rounded-full" />
-                {t('singleProduct.features.crueltyFree')}
+              <div className={`flex items-center text-sm text-foreground ${isRTL ? 'flex-row-reverse gap-2 justify-end' : 'gap-2'}`}>
+                <div className="w-1.5 h-1.5 bg-gradient-rose rounded-full flex-shrink-0" />
+                <span>{t('singleProduct.features.crueltyFree')}</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-foreground">
-                <div className="w-1.5 h-1.5 bg-gradient-rose rounded-full" />
-                {t('singleProduct.features.sustainable')}
+              <div className={`flex items-center text-sm text-foreground ${isRTL ? 'flex-row-reverse gap-2 justify-end' : 'gap-2'}`}>
+                <div className="w-1.5 h-1.5 bg-gradient-rose rounded-full flex-shrink-0" />
+                <span>{t('singleProduct.features.sustainable')}</span>
               </div>
             </motion.div>
 
@@ -288,11 +290,11 @@ export default function SingleProductHero() {
 
                   {/* Name */}
                   <div>
-                    <Label htmlFor="name" className="text-foreground font-semibold mb-1.5 md:mb-2 block text-sm md:text-base">
+                    <Label htmlFor="name" className={`text-foreground font-semibold mb-1.5 md:mb-2 block text-sm md:text-base ${isRTL ? 'text-right' : ''}`}>
                       {t('singleProduct.checkout.name')} *
                     </Label>
                     <div className="relative">
-                      <User className="absolute left-3 md:left-4 top-1/2 -translate-y-1/2 w-4 md:w-5 h-4 md:h-5 text-muted-foreground pointer-events-none" />
+                      <User className={`absolute ${isRTL ? 'right-3 md:right-4' : 'left-3 md:left-4'} top-1/2 -translate-y-1/2 w-4 md:w-5 h-4 md:h-5 text-muted-foreground pointer-events-none`} />
                       <Input
                         id="name"
                         type="text"
@@ -301,9 +303,9 @@ export default function SingleProductHero() {
                         onFocus={() => setFocusedField('name')}
                         onBlur={() => setFocusedField(null)}
                         placeholder={t('singleProduct.checkout.namePlaceholder')}
-                        className={`pl-10 md:pl-12 h-12 md:h-14 text-sm md:text-base rounded-lg md:rounded-xl border-2 transition-all ${
+                        className={`${isRTL ? 'pr-10 md:pr-12' : 'pl-10 md:pl-12'} h-12 md:h-14 text-sm md:text-base rounded-lg md:rounded-xl border-2 transition-all ${
                           focusedField === 'name' ? 'ring-2 md:ring-4 ring-primary/20 border-primary' : 'border-border'
-                        }`}
+                        } ${isRTL ? 'text-right' : ''}`}
                         required
                         disabled={isSubmitting || submitSuccess}
                       />
@@ -312,11 +314,11 @@ export default function SingleProductHero() {
 
                   {/* Phone */}
                   <div>
-                    <Label htmlFor="phone" className="text-foreground font-semibold mb-1.5 md:mb-2 block text-sm md:text-base">
+                    <Label htmlFor="phone" className={`text-foreground font-semibold mb-1.5 md:mb-2 block text-sm md:text-base ${isRTL ? 'text-right' : ''}`}>
                       {t('singleProduct.checkout.phone')} *
                     </Label>
                     <div className="relative">
-                      <Phone className="absolute left-3 md:left-4 top-1/2 -translate-y-1/2 w-4 md:w-5 h-4 md:h-5 text-muted-foreground pointer-events-none" />
+                      <Phone className={`absolute ${isRTL ? 'right-3 md:right-4' : 'left-3 md:left-4'} top-1/2 -translate-y-1/2 w-4 md:w-5 h-4 md:h-5 text-muted-foreground pointer-events-none`} />
                       <Input
                         id="phone"
                         type="tel"
@@ -325,9 +327,9 @@ export default function SingleProductHero() {
                         onFocus={() => setFocusedField('phone')}
                         onBlur={() => setFocusedField(null)}
                         placeholder={t('singleProduct.checkout.phonePlaceholder')}
-                        className={`pl-10 md:pl-12 h-12 md:h-14 text-sm md:text-base rounded-lg md:rounded-xl border-2 transition-all ${
+                        className={`${isRTL ? 'pr-10 md:pr-12' : 'pl-10 md:pl-12'} h-12 md:h-14 text-sm md:text-base rounded-lg md:rounded-xl border-2 transition-all ${
                           focusedField === 'phone' ? 'ring-2 md:ring-4 ring-primary/20 border-primary' : 'border-border'
-                        }`}
+                        } ${isRTL ? 'text-right' : ''}`}
                         required
                         disabled={isSubmitting || submitSuccess}
                       />
@@ -336,11 +338,11 @@ export default function SingleProductHero() {
 
                   {/* Address */}
                   <div>
-                    <Label htmlFor="address" className="text-foreground font-semibold mb-1.5 md:mb-2 block text-sm md:text-base">
+                    <Label htmlFor="address" className={`text-foreground font-semibold mb-1.5 md:mb-2 block text-sm md:text-base ${isRTL ? 'text-right' : ''}`}>
                       {t('singleProduct.checkout.address')} *
                     </Label>
                     <div className="relative">
-                      <MapPin className="absolute left-3 md:left-4 top-3 md:top-4 w-4 md:w-5 h-4 md:h-5 text-muted-foreground pointer-events-none" />
+                      <MapPin className={`absolute ${isRTL ? 'right-3 md:right-4' : 'left-3 md:left-4'} top-3 md:top-4 w-4 md:w-5 h-4 md:h-5 text-muted-foreground pointer-events-none`} />
                       <Textarea
                         id="address"
                         value={formData.address}
@@ -348,9 +350,9 @@ export default function SingleProductHero() {
                         onFocus={() => setFocusedField('address')}
                         onBlur={() => setFocusedField(null)}
                         placeholder={t('singleProduct.checkout.addressPlaceholder')}
-                        className={`pl-10 md:pl-12 min-h-[90px] md:min-h-[100px] text-sm md:text-base rounded-lg md:rounded-xl border-2 resize-none transition-all ${
+                        className={`${isRTL ? 'pr-10 md:pr-12' : 'pl-10 md:pl-12'} min-h-[90px] md:min-h-[100px] text-sm md:text-base rounded-lg md:rounded-xl border-2 resize-none transition-all ${
                           focusedField === 'address' ? 'ring-2 md:ring-4 ring-primary/20 border-primary' : 'border-border'
-                        }`}
+                        } ${isRTL ? 'text-right' : ''}`}
                         required
                         disabled={isSubmitting || submitSuccess}
                       />
@@ -394,19 +396,19 @@ export default function SingleProductHero() {
               transition={{ delay: 0.9 }}
               className="flex flex-wrap gap-4 pt-4 text-sm text-muted-foreground"
             >
-              <div className="flex items-center gap-2">
+              <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 {t('singleProduct.trustBadges.freeShipping')}
               </div>
-              <div className="flex items-center gap-2">
+              <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 {t('singleProduct.trustBadges.returns')}
               </div>
-              <div className="flex items-center gap-2">
+              <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>

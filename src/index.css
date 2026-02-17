@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&family=Cairo:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -363,4 +363,32 @@
   100% {
     background-position: 1000px 0;
   }
+}
+
+/* RTL Support */
+[dir="rtl"] body {
+  font-family: 'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  font-family: 'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif;
+  font-weight: 600;
+}
+
+/* Only flip directional icons (arrows, chevrons) */
+[dir="rtl"] svg.lucide-arrow-right,
+[dir="rtl"] svg.lucide-chevron-right,
+[dir="rtl"] svg.lucide-chevron-left,
+[dir="rtl"] svg.lucide-arrow-left {
+  transform: scaleX(-1);
+}
+
+/* Better spacing for Arabic text */
+[dir="rtl"] {
+  letter-spacing: normal;
 }

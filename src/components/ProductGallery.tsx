@@ -6,7 +6,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function ProductGallery() {
   const [selectedImage, setSelectedImage] = useState(0);
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
 
   return (
     <section className="py-16 md:py-24 bg-background">

@@ -3,7 +3,7 @@ import { FadeInWhenVisible } from './animations/FadeInWhenVisible';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function ProductShowcase() {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
 
   const products = [
     {
@@ -53,7 +53,7 @@ export default function ProductShowcase() {
                 whileHover={{ y: -10 }}
                 className="bg-white rounded-3xl p-8 shadow-soft hover:shadow-hover transition-all duration-500 border border-border group"
               >
-                <div className="mb-6">
+                <div className={`mb-6 ${isRTL ? 'text-right' : ''}`}>
                   <h3 className="text-2xl font-heading font-bold text-foreground mb-2 group-hover:text-gradient transition-all">
                     {t(`singleProduct.products.${product.key}.name`)}
                   </h3>
@@ -62,32 +62,32 @@ export default function ProductShowcase() {
                   </p>
                 </div>
 
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className={`text-muted-foreground mb-6 leading-relaxed ${isRTL ? 'text-right' : ''}`}>
                   {t(`singleProduct.products.${product.key}.description`)}
                 </p>
 
-                <div className="mb-6 inline-block bg-secondary/50 px-4 py-2 rounded-full text-sm font-medium text-foreground">
+                <div className={`mb-6 inline-block bg-secondary/50 px-4 py-2 rounded-full text-sm font-medium text-foreground ${isRTL ? 'float-right' : ''}`}>
                   30ml / 1 fl oz
                 </div>
 
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">
+                <div className={`mb-6 ${isRTL ? 'clear-both' : ''}`}>
+                  <h4 className={`text-sm font-semibold text-foreground mb-3 uppercase tracking-wide ${isRTL ? 'text-right' : ''}`}>
                     {t('productDetail.sections.ingredients')}
                   </h4>
-                  <p className="text-sm text-muted-foreground italic">
+                  <p className={`text-sm text-muted-foreground italic ${isRTL ? 'text-right' : ''}`}>
                     {t(`singleProduct.products.${product.key}.ingredients`)}
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">
+                  <h4 className={`text-sm font-semibold text-foreground mb-3 uppercase tracking-wide ${isRTL ? 'text-right' : ''}`}>
                     {t('singleProduct.benefits.title')}
                   </h4>
                   <ul className="space-y-2">
                     {product.benefits.map((benefit, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <li key={idx} className={`flex items-center text-sm text-muted-foreground ${isRTL ? 'flex-row-reverse gap-2 text-right justify-end' : 'gap-2'}`}>
                         <svg
-                          className="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                          className="w-5 h-5 text-primary flex-shrink-0"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -97,7 +97,7 @@ export default function ProductShowcase() {
                             clipRule="evenodd"
                           />
                         </svg>
-                        {t(`singleProduct.benefits.${benefit}`)}
+                        <span className="flex-1">{t(`singleProduct.benefits.${benefit}`)}</span>
                       </li>
                     ))}
                   </ul>

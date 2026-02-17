@@ -4,7 +4,7 @@ import { FadeInWhenVisible } from './animations/FadeInWhenVisible';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function ProductTestimonials() {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
   const reviewCount = 13;
 
   const scrollToCheckout = () => {
@@ -53,19 +53,19 @@ export default function ProductTestimonials() {
                   ))}
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed mb-6 italic">
+                <p className={`text-muted-foreground leading-relaxed mb-6 italic ${isRTL ? 'text-right' : 'text-left'}`}>
                   "{t(`singleProduct.testimonials.reviews.${index}.text`)}"
                 </p>
 
-                <div className="flex items-center gap-3 pt-4 border-t border-border">
+                <div className={`flex items-center gap-3 pt-4 border-t border-border ${isRTL ? 'flex-row-reverse' : ''}`}>
                   <div className="w-12 h-12 bg-gradient-rose rounded-full flex items-center justify-center text-white font-bold text-lg">
                     {t(`singleProduct.testimonials.reviews.${index}.name`).charAt(0)}
                   </div>
-                  <div className="flex-1">
+                  <div className={`flex-1 ${isRTL ? 'text-right' : ''}`}>
                     <p className="font-semibold text-foreground">
                       {t(`singleProduct.testimonials.reviews.${index}.name`)}
                     </p>
-                    <div className="flex items-center gap-1 text-sm text-green-600">
+                    <div className={`flex items-center gap-1 text-sm text-green-600 ${isRTL ? 'flex-row-reverse' : ''}`}>
                       <ShieldCheck className="w-4 h-4" />
                       {t('singleProduct.testimonials.verifiedPurchase')}
                     </div>

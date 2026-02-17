@@ -4,7 +4,7 @@ import { FadeInWhenVisible } from "@/components/animations/FadeInWhenVisible";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const IngredientsSpotlight = () => {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
 
   const ingredients = [
     {
@@ -106,7 +106,7 @@ const IngredientsSpotlight = () => {
                   <div className="border-t border-border my-4"></div>
 
                   {/* Benefits */}
-                  <div className="flex items-start gap-2">
+                  <div className={`flex items-start gap-2 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
                     <Sparkles className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                     <p className="font-body text-xs text-foreground leading-relaxed">
                       {ingredient.benefits}

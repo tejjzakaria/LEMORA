@@ -1,6 +1,6 @@
 export const mainProduct = {
-  id: 'floriya-botanical-oil-collection',
-  name: 'FLORIYA Botanical Body Oil Collection',
+  id: 'floriya-body-oil-collection',
+  name: 'FLORIYA Body Oil Collection',
   price: 249,
   images: [
     '/product-images/IMG_0543.PNG',

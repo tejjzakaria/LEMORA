@@ -1,11 +1,13 @@
 import { en, TranslationKeys } from './en';
 import { fr } from './fr';
+import { ar } from './ar';
 
-export type Language = 'en' | 'fr';
+export type Language = 'en' | 'fr' | 'ar';
 
 export const translations: Record<Language, TranslationKeys> = {
   en,
   fr,
+  ar,
 };
 
 // Helper function to get nested translation
@@ -33,4 +35,4 @@ export const interpolate = (text: string, params: Record<string, string | number
   return result;
 };
 
-export { en, fr };
+export { en, fr, ar };

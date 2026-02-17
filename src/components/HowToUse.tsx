@@ -3,7 +3,7 @@ import { FadeInWhenVisible } from './animations/FadeInWhenVisible';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function HowToUse() {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
 
   const steps = ['step1', 'step2', 'step3', 'step4', 'step5'];
 
@@ -28,15 +28,15 @@ export default function HowToUse() {
             {steps.map((step, index) => (
               <FadeInWhenVisible key={index} delay={index * 0.1}>
                 <motion.div
-                  whileHover={{ x: 10 }}
-                  className="flex items-start gap-6 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 border border-border"
+                  whileHover={{ x: isRTL ? -10 : 10 }}
+                  className={`flex items-start bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 border border-border ${isRTL ? 'flex-row-reverse gap-4' : 'gap-6'}`}
                 >
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-gradient-rose rounded-full flex items-center justify-center text-white font-bold text-lg shadow-glow">
                       {index + 1}
                     </div>
                   </div>
-                  <p className="text-lg text-foreground pt-2 leading-relaxed">
+                  <p className={`flex-1 text-lg text-foreground pt-2 leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
                     {t(`singleProduct.howToUse.${step}`)}
                   </p>
                 </motion.div>
@@ -46,7 +46,7 @@ export default function HowToUse() {
 
           <FadeInWhenVisible delay={0.6}>
             <div className="mt-12 bg-primary/10 border-2 border-primary/30 rounded-2xl p-8">
-              <div className="flex items-start gap-4">
+              <div className={`flex items-start gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <div className="flex-shrink-0">
                   <svg
                     className="w-8 h-8 text-primary"
@@ -60,7 +60,7 @@ export default function HowToUse() {
                     />
                   </svg>
                 </div>
-                <div>
+                <div className={isRTL ? 'text-right' : ''}>
                   <h3 className="text-xl font-heading font-bold text-foreground mb-2">
                     {t('singleProduct.howToUse.proTip')}
                   </h3>
