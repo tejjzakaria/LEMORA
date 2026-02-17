@@ -25,7 +25,7 @@ export const siteConfig = {
     // Social Media Links
     social: {
       facebook: "https://facebook.com/lemoracosmetics",
-      instagram: "https://instagram.com/lemoracosmetics",
+      instagram: "https://www.instagram.com/floriyabodyoil/",
       twitter: "https://twitter.com/lemoracosmetics",
       tiktok: "https://tiktok.com/@lemoracosmetics",
       youtube: "https://youtube.com/@lemoracosmetics",

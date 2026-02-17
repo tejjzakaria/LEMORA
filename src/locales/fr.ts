@@ -673,5 +673,196 @@ export const fr = {
     learnMore: "En Savoir Plus",
     comingSoon: "Bientôt Disponible",
     home: "Accueil",
+    free: "Gratuit",
+  },
+
+  // Single Product Page
+  singleProduct: {
+    badge: "Collection Édition Limitée",
+    tagline: "L'Essence de la Nature, Mise en Bouteille pour Vous",
+    description: "Découvrez le pouvoir transformateur des plantes avec notre collection artisanale de trois huiles corporelles exquises. Chaque mélange est soigneusement formulé avec des ingrédients premium pour nourrir, restaurer et célébrer la beauté naturelle de votre peau.",
+    price: "Prix",
+    quantity: "Quantité",
+    addToCart: "Commander Maintenant",
+    orderNow: "Passez Votre Commande",
+    secureCheckout: "Paiement Sécurisé - Paiement à la Livraison",
+
+    trustBadges: {
+      freeShipping: "Livraison Gratuite",
+      returns: "Retours 30 Jours",
+      secure: "Paiement Sécurisé",
+    },
+
+    showcase: {
+      subtitle: "La Collection Complète",
+      title: "Trois Mélanges Botaniques Distinctifs",
+      description: "Chacun conçu pour élever votre rituel de soins de la peau",
+    },
+
+    products: {
+      roseBliss: {
+        name: "Rose Bliss",
+        subtitle: "Huile de Bain et Corps Botanique",
+        description: "Huile luxueuse infusée à la rose pour une peau radieuse et hydratée",
+        ingredients: "Pétales de Rose, Huile d'Amande Douce, Vitamine E",
+      },
+      calendulaSunrise: {
+        name: "Calendula Sunrise",
+        subtitle: "Huile Corporelle Botanique",
+        description: "Mélange apaisant au calendula pour les peaux sensibles et délicates",
+        ingredients: "Fleurs de Calendula, Huile de Jojoba, Orange Douce",
+      },
+      butterflyPea: {
+        name: "Butterfly Pea",
+        subtitle: "Huile Multi-Usage Botanique",
+        description: "Huile botanique polyvalente pour le corps, le visage et les cheveux",
+        ingredients: "Fleurs de Pois Papillon, Gingembre, Cardamome",
+      },
+    },
+
+    benefits: {
+      title: "Bienfaits",
+      deepHydration: "Hydratation profonde",
+      antiAging: "Propriétés anti-âge",
+      aromatherapy: "Bienfaits d'aromathérapie",
+      evenTone: "Unifie le teint",
+      soothes: "Apaise les irritations",
+      healing: "Favorise la guérison",
+      calms: "Calme l'inflammation",
+      gentle: "Doux pour les peaux sensibles",
+      multiPurpose: "Usage polyvalent",
+      antioxidants: "Riche en antioxydants",
+      elasticity: "Favorise l'élasticité",
+      nourishes: "Nourrit en profondeur",
+    },
+
+    features: {
+      title: "Pourquoi Choisir FLORIYA",
+      natural: "100% Naturel & Botanique",
+      handcrafted: "Fabriqué Artisanalement avec Amour",
+      noSynthetic: "Sans Parfums Synthétiques",
+      crueltyFree: "Non Testé sur les Animaux & Vegan",
+      sustainable: "Emballage Durable",
+      smallBatch: "Production en Petites Séries",
+    },
+
+    gallery: {
+      title: "Découvrez la Beauté",
+      description: "Soigneusement élaboré, magnifiquement emballé et fabriqué avec amour",
+    },
+
+    howToUse: {
+      title: "Mode d'Emploi",
+      description: "Étapes simples pour votre rituel quotidien de bien-être",
+      step1: "Appliquez quelques gouttes sur une peau propre et légèrement humide",
+      step2: "Massez doucement par mouvements circulaires jusqu'à absorption",
+      step3: "Utilisez quotidiennement pour de meilleurs résultats, matin ou soir",
+      step4: "Peut être mélangé avec votre hydratant préféré",
+      step5: "Parfait pour les rituels de bien-être et les massages",
+      proTip: "Astuce Pro",
+      proTipText: "Pour une absorption et des bienfaits maximum, appliquez les huiles immédiatement après la douche ou le bain pendant que votre peau est encore légèrement humide. Cela aide à retenir l'humidité et permet aux ingrédients botaniques de pénétrer plus profondément dans votre peau.",
+    },
+
+    testimonials: {
+      title: "Aimé par Nos Clients",
+      description: "De vrais avis de vraies personnes qui ont transformé leur routine de soins",
+      rating: "sur 5",
+      basedOn: "Basé sur {count} avis vérifiés",
+      verifiedPurchase: "Achat Vérifié",
+      cta: "Rejoignez des milliers de clients satisfaits qui découvrent la différence FLORIYA",
+      ctaButton: "Obtenez Votre Collection Maintenant",
+      reviews: [
+        {
+          name: "Salma Benkirane",
+          text: "Wallah 3jebni bezzaf had l'huile! Jeldti wlatناعمة بزاف و ريحتو زوينة. Kanst3mlo كل نهار و نتيجة روعة.",
+        },
+        {
+          name: "Imane Alaoui",
+          text: "Ana 3andi jeld حساس و had l'produit parfait lia. Daba jeldti wlat fayqa و ما بقاتش kayban 3liha tta مشكل. Nصحكم بيه!",
+        },
+        {
+          name: "Dounia El Amrani",
+          text: "Hadi أحسن حاجة جربتها! ريحة الورد غير تحفة و النتيجة باينة من أول استعمال. Jeldti wlat ناعمة و مرطبة بزاف.",
+        },
+        {
+          name: "Khadija Tazi",
+          text: "Wa rah jeld wjhi kan فيه تاش حاجة و دابا ولا ناعم بفضل هاد l'huile! طبيعي 100% و فعال بزاف. Merci FLORIYA!",
+        },
+        {
+          name: "Siham Berrada",
+          text: "Knt kanخلص فلوس بزاف على produits importés و هادي أحسن منهم كاملين! Kanbغيها على tout الجسم و النتيجة خيالية.",
+        },
+        {
+          name: "Zineb Mansouri",
+          text: "L'odeur zwina بزاف و jeldti wlat glow ماشي عادي! Kanستعملها قبل النوم و كنفيق jeldti ناعمة و فايقة. Top!",
+        },
+        {
+          name: "Asmae Chraibi",
+          text: "Hadi ثاني مرة كنشري منها! L'qualité 3aliya و السعر مناسب. Kolchi طبيعي و ما فيهش حتى مواد كيماوية. راكم top!",
+        },
+        {
+          name: "Hayat Bennani",
+          text: "Wallah ما توق3ت النتيجة تكون haka! Jeldti كانت ناشفة بزاف دابا ولات مرطبة و ناعمة. Kanbستعملها كل يوم الحمد لله.",
+        },
+        {
+          name: "Laila Bouazza",
+          text: "Ana dima kanbحث على produits طبيعية و هادي جاتني فوق التوقعات! الريحة عطرية و التأثير فوري. نصيحتي جربوها!",
+        },
+        {
+          name: "Malika Senhaji",
+          text: "Knt كنستعمل huiles كتار و لكن هادي أحسن وحدة! طبيعية و فعالة و الريحة ديالها راقية بزاف. Kolchi fih parfait!",
+        },
+        {
+          name: "Hafsa Benjelloun",
+          text: "Ma كنضنش نلقى produit مغربي بهاد l'qualité! Jeldti wlat ناعمة و الخطوط bda تختافي. Kandير massage بيه كل ليلة ممتاز!",
+        },
+        {
+          name: "Rim Kadiri",
+          text: "L'packaging جميل بزاف و l'produit أجمل! Kanستعملو على الوجه و الجسم و النتيجة واضحة. الاستثمار يستحق بزاف!",
+        },
+        {
+          name: "Nadia Fassi Fihri",
+          text: "Après جربت بزاف ديال les produits, هادي ولات l'préférée ديالي! طبيعية و ريحتها زوينة و jeldti ولات تنور. 5 نجوم!",
+        },
+      ],
+    },
+
+    checkout: {
+      title: "Complétez Votre Commande",
+      subtitle: "Remplissez vos coordonnées ci-dessous",
+      name: "Nom Complet",
+      namePlaceholder: "Entrez votre nom complet",
+      phone: "Numéro de Téléphone",
+      phonePlaceholder: "+212 XXX XXX XXX",
+      address: "Adresse Complète",
+      addressPlaceholder: "Entrez votre adresse complète incluant rue, ville et code postal",
+      paymentMethod: "Mode de Paiement",
+      cod: "Paiement à la Livraison (COD)",
+      totalPrice: "Prix Total",
+      placeOrder: "Passer la Commande",
+      processing: "Traitement...",
+      orderSummary: "Résumé de la Commande",
+      product: "Produit",
+      validation: {
+        required: "Veuillez remplir tous les champs obligatoires",
+      },
+      success: {
+        title: "Commande Confirmée!",
+        message: "Merci pour votre commande! Nous avons reçu vos informations et vous contacterons bientôt pour confirmer la livraison.",
+        toast: "Commande passée avec succès! Nous vous contacterons bientôt.",
+      },
+      error: {
+        title: "Échec de la Commande",
+        message: "Nous n'avons pas pu traiter votre commande pour le moment. Veuillez vérifier votre connexion Internet et réessayer, ou nous contacter directement.",
+        needHelp: "Besoin d'aide? Contactez-nous au",
+      },
+    },
+
+    cta: {
+      title: "Prêt à Transformer Vos Soins de la Peau?",
+      description: "Commandez maintenant et découvrez le pouvoir des plantes",
+      button: "Commander Maintenant - {price} MAD",
+      limitedOffer: "Offre à Durée Limitée",
+    },
   },
 };

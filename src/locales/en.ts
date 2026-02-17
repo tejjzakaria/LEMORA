@@ -673,6 +673,197 @@ export const en = {
     learnMore: "Learn More",
     comingSoon: "Coming Soon",
     home: "Home",
+    free: "Free",
+  },
+
+  // Single Product Page
+  singleProduct: {
+    badge: "Limited Edition Collection",
+    tagline: "Nature's Essence, Bottled for You",
+    description: "Experience the transformative power of botanicals with our handcrafted collection of three exquisite body oils. Each blend is carefully formulated with premium ingredients to nourish, restore, and celebrate your skin's natural beauty.",
+    price: "Price",
+    quantity: "Quantity",
+    addToCart: "Order Now",
+    orderNow: "Place Your Order",
+    secureCheckout: "Secure Checkout - Cash on Delivery",
+
+    trustBadges: {
+      freeShipping: "Free Shipping",
+      returns: "30-Day Returns",
+      secure: "Secure Checkout",
+    },
+
+    showcase: {
+      subtitle: "The Complete Collection",
+      title: "Three Distinctive Botanical Blends",
+      description: "Each crafted to elevate your skincare ritual",
+    },
+
+    products: {
+      roseBliss: {
+        name: "Rose Bliss",
+        subtitle: "Botanical Bath & Body Oil",
+        description: "Luxurious rose-infused oil for radiant, hydrated skin",
+        ingredients: "Rose Petals, Sweet Almond Oil, Vitamin E",
+      },
+      calendulaSunrise: {
+        name: "Calendula Sunrise",
+        subtitle: "Botanical Body Oil",
+        description: "Soothing calendula blend for sensitive and delicate skin",
+        ingredients: "Calendula Flowers, Jojoba Oil, Sweet Orange",
+      },
+      butterflyPea: {
+        name: "Butterfly Pea",
+        subtitle: "Botanical Multi-Purpose Oil",
+        description: "Versatile botanical oil for body, face, and hair",
+        ingredients: "Butterfly Pea Flowers, Ginger, Cardamom",
+      },
+    },
+
+    benefits: {
+      title: "Benefits",
+      deepHydration: "Deep hydration",
+      antiAging: "Anti-aging properties",
+      aromatherapy: "Aromatherapy benefits",
+      evenTone: "Evens skin tone",
+      soothes: "Soothes irritation",
+      healing: "Promotes healing",
+      calms: "Calms inflammation",
+      gentle: "Gentle on sensitive skin",
+      multiPurpose: "Multi-purpose use",
+      antioxidants: "Rich in antioxidants",
+      elasticity: "Promotes elasticity",
+      nourishes: "Nourishes deeply",
+    },
+
+    features: {
+      title: "Why Choose FLORIYA",
+      natural: "100% Natural & Botanical",
+      handcrafted: "Handcrafted with Love",
+      noSynthetic: "No Synthetic Fragrances",
+      crueltyFree: "Cruelty-Free & Vegan",
+      sustainable: "Sustainable Packaging",
+      smallBatch: "Small Batch Production",
+    },
+
+    gallery: {
+      title: "Experience the Beauty",
+      description: "Carefully crafted, beautifully packaged, and made with love",
+    },
+
+    howToUse: {
+      title: "How to Use",
+      description: "Simple steps for your daily self-care ritual",
+      step1: "Apply a few drops to clean, slightly damp skin",
+      step2: "Gently massage in circular motions until absorbed",
+      step3: "Use daily for best results, morning or evening",
+      step4: "Can be mixed with your favorite moisturizer",
+      step5: "Perfect for self-care rituals and massage",
+      proTip: "Pro Tip",
+      proTipText: "For maximum absorption and benefits, apply the oils immediately after showering or bathing while your skin is still slightly damp. This helps lock in moisture and allows the botanical ingredients to penetrate deeper into your skin.",
+    },
+
+    testimonials: {
+      title: "Loved by Our Customers",
+      description: "Real reviews from real people who transformed their skincare routine",
+      rating: "out of 5",
+      basedOn: "Based on {count} verified reviews",
+      verifiedPurchase: "Verified Purchase",
+      cta: "Join thousands of happy customers experiencing the FLORIYA difference",
+      ctaButton: "Get Your Collection Now",
+      reviews: [
+        {
+          name: "Salma Benkirane",
+          text: "Wallah 3jebni bezzaf had l'huile! Jeldti wlatناعمة بزاف و ريحتو زوينة. Kanst3mlo كل نهار و نتيجة روعة.",
+        },
+        {
+          name: "Imane Alaoui",
+          text: "Ana 3andi jeld حساس و had l'produit parfait lia. Daba jeldti wlat fayqa و ما بقاتش kayban 3liha tta مشكل. Nصحكم بيه!",
+        },
+        {
+          name: "Dounia El Amrani",
+          text: "Hadi أحسن حاجة جربتها! ريحة الورد غير تحفة و النتيجة باينة من أول استعمال. Jeldti wlat ناعمة و مرطبة بزاف.",
+        },
+        {
+          name: "Khadija Tazi",
+          text: "Wa rah jeld wjhi kan فيه تاش حاجة و دابا ولا ناعم بفضل هاد l'huile! طبيعي 100% و فعال بزاف. Merci FLORIYA!",
+        },
+        {
+          name: "Siham Berrada",
+          text: "Knt kanخلص فلوس بزاف على produits importés و هادي أحسن منهم كاملين! Kanbغيها على tout الجسم و النتيجة خيالية.",
+        },
+        {
+          name: "Zineb Mansouri",
+          text: "L'odeur zwina بزاف و jeldti wlat glow ماشي عادي! Kanستعملها قبل النوم و كنفيق jeldti ناعمة و فايقة. Top!",
+        },
+        {
+          name: "Asmae Chraibi",
+          text: "Hadi ثاني مرة كنشري منها! L'qualité 3aliya و السعر مناسب. Kolchi طبيعي و ما فيهش حتى مواد كيماوية. راكم top!",
+        },
+        {
+          name: "Hayat Bennani",
+          text: "Wallah ما توق3ت النتيجة تكون haka! Jeldti كانت ناشفة بزاف دابا ولات مرطبة و ناعمة. Kanbستعملها كل يوم الحمد لله.",
+        },
+        {
+          name: "Laila Bouazza",
+          text: "Ana dima kanbحث على produits طبيعية و هادي جاتني فوق التوقعات! الريحة عطرية و التأثير فوري. نصيحتي جربوها!",
+        },
+        {
+          name: "Malika Senhaji",
+          text: "Knt كنستعمل huiles كتار و لكن هادي أحسن وحدة! طبيعية و فعالة و الريحة ديالها راقية بزاف. Kolchi fih parfait!",
+        },
+        {
+          name: "Hafsa Benjelloun",
+          text: "Ma كنضنش نلقى produit مغربي بهاد l'qualité! Jeldti wlat ناعمة و الخطوط bda تختافي. Kandير massage بيه كل ليلة ممتاز!",
+        },
+        {
+          name: "Rim Kadiri",
+          text: "L'packaging جميل بزاف و l'produit أجمل! Kanستعملو على الوجه و الجسم و النتيجة واضحة. الاستثمار يستحق بزاف!",
+        },
+        {
+          name: "Nadia Fassi Fihri",
+          text: "Après جربت بزاف ديال les produits, هادي ولات l'préférée ديالي! طبيعية و ريحتها زوينة و jeldti ولات تنور. 5 نجوم!",
+        },
+      ],
+    },
+
+    checkout: {
+      title: "Complete Your Order",
+      subtitle: "Fill in your details below",
+      name: "Full Name",
+      namePlaceholder: "Enter your full name",
+      phone: "Phone Number",
+      phonePlaceholder: "+212 XXX XXX XXX",
+      address: "Full Address",
+      addressPlaceholder: "Enter your complete address including street, city, and postal code",
+      paymentMethod: "Payment Method",
+      cod: "Cash on Delivery (COD)",
+      totalPrice: "Total Price",
+      placeOrder: "Place Order",
+      processing: "Processing...",
+      orderSummary: "Order Summary",
+      product: "Product",
+      validation: {
+        required: "Please fill in all required fields",
+      },
+      success: {
+        title: "Order Confirmed!",
+        message: "Thank you for your order! We've received your details and will contact you shortly to confirm delivery.",
+        toast: "Order placed successfully! We'll contact you soon.",
+      },
+      error: {
+        title: "Order Failed",
+        message: "We couldn't process your order at the moment. Please check your internet connection and try again, or contact us directly.",
+        needHelp: "Need help? Contact us at",
+      },
+    },
+
+    cta: {
+      title: "Ready to Transform Your Skincare?",
+      description: "Order now and experience the power of botanicals",
+      button: "Order Now - {price} MAD",
+      limitedOffer: "Limited Time Offer",
+    },
   },
 };
 

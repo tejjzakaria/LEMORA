@@ -8,14 +8,12 @@ import { Analytics } from "@vercel/analytics/react";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import Index from "./pages/Index";
-import Shop from "./pages/Shop";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import ProductDetail from "./pages/ProductDetail";
-import BundleDetail from "./pages/BundleDetail";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
+import { Navigate } from "react-router-dom";
 
 const queryClient = new QueryClient();
 
@@ -29,11 +27,11 @@ const App = () => (
           <AnnouncementBar />
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/shop" element={<Shop />} />
+            <Route path="/shop" element={<Navigate to="/" replace />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/product/:id" element={<ProductDetail />} />
-            <Route path="/bundle/:slug" element={<BundleDetail />} />
+            <Route path="/product/:id" element={<Navigate to="/" replace />} />
+            <Route path="/bundle/:slug" element={<Navigate to="/" replace />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

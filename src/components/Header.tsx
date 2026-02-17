@@ -14,9 +14,7 @@ const Header = () => {
 
   const navLinks = [
     { name: t('header.home'), href: "/" },
-    { name: t('header.shop'), href: "/shop" },
     { name: t('header.about'), href: "/about" },
-    { name: t('header.contact'), href: "/contact" },
   ];
 
   useEffect(() => {
@@ -78,8 +76,8 @@ const Header = () => {
               whileTap={{ scale: 0.95 }}
             >
             <motion.img
-              src="/logo.avif"
-              alt="Lemora Cosmetics"
+              src="/NEW-logo-without-bg.png"
+              alt="FLORIYA Body Oil"
               className="h-12 md:h-14 lg:h-16 w-auto object-contain"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}

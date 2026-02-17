@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Logo */}
           <Link to="/" className="inline-block mb-6">
             <img
-              src="/logo.avif"
+              src="/NEW-logo-without-bg.png"
               alt={siteName}
               className="h-12 w-auto object-contain brightness-0 invert"
             />
