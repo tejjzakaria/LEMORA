@@ -10,6 +10,18 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+  }
+}
+
+const trackContact = () => {
+  if (typeof window !== 'undefined' && window.fbq) {
+    window.fbq('track', 'Contact');
+  }
+};
+
 const Contact = () => {
   const { contact, businessHours } = siteConfig;
   const { t } = useLanguage();
@@ -95,6 +107,7 @@ const Contact = () => {
                   href={method.href}
                   target={method.href.startsWith('http') ? '_blank' : undefined}
                   rel={method.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  onClick={trackContact}
                   whileHover={{ y: -5 }}
                   transition={{ duration: 0.3 }}
                 >
