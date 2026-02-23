@@ -13,12 +13,14 @@ import { useLanguage } from "@/contexts/LanguageContext";
 declare global {
   interface Window {
     fbq?: (...args: unknown[]) => void;
+    ttq?: { track: (...args: unknown[]) => void };
   }
 }
 
 const trackContact = () => {
-  if (typeof window !== 'undefined' && window.fbq) {
-    window.fbq('track', 'Contact');
+  if (typeof window !== 'undefined') {
+    if (window.fbq) window.fbq('track', 'Contact');
+    if (window.ttq) window.ttq.track('Contact');
   }
 };
 

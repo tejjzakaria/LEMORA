@@ -34,6 +34,13 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+    ttq?: { track: (...args: unknown[]) => void };
+  }
+}
+
 const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -136,6 +143,10 @@ const ProductDetail = () => {
 
       // Since we're using no-cors, we won't get a readable response
       // but we can assume success if no error was thrown
+      if (typeof window !== 'undefined') {
+        if (window.ttq) window.ttq.track('PlaceAnOrder');
+        if (window.fbq) window.fbq('track', 'Purchase', { value: product.price, currency: 'MAD' });
+      }
       setSubmitSuccess(true);
       toast.success(t('productDetail.success.toast'), {
         duration: 5000,

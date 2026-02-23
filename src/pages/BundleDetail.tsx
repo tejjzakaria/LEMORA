@@ -31,6 +31,13 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+    ttq?: { track: (...args: unknown[]) => void };
+  }
+}
+
 const BundleDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -105,6 +112,10 @@ const BundleDetail = () => {
         }
       );
 
+      if (typeof window !== 'undefined') {
+        if (window.ttq) window.ttq.track('PlaceAnOrder');
+        if (window.fbq) window.fbq('track', 'Purchase', { value: bundle.bundlePrice, currency: 'MAD' });
+      }
       toast.success(t('bundleDetail.success.toast'));
       setSubmitSuccess(true);
       setFormData({ name: "", phone: "", address: "" });
