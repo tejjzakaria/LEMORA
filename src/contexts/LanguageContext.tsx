@@ -18,7 +18,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   const [language, setLanguageState] = useState<Language>(() => {
     // Get language from localStorage or default to English
     const saved = localStorage.getItem('floriya-language');
-    return (saved === 'en' || saved === 'fr' || saved === 'ar') ? saved : 'en';
+    return (saved === 'en' || saved === 'fr' || saved === 'ar') ? saved : 'ar';
   });
 
   // Helper to check if language is RTL
