@@ -64,6 +64,8 @@ export default function SingleProductCheckout() {
         }
       );
 
+      if ((window as any).fbq) (window as any).fbq('track', 'Purchase', { value: mainProduct.price, currency: 'MAD' });
+      if ((window as any).ttq) (window as any).ttq.track('PlaceAnOrder');
       setSubmitSuccess(true);
       toast.success(t('singleProduct.checkout.success.toast'), {
         duration: 5000,
