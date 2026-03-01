@@ -16,9 +16,14 @@ interface LanguageProviderProps {
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
-    // Get language from localStorage or default to English
     const saved = localStorage.getItem('floriya-language');
-    return (saved === 'en' || saved === 'fr' || saved === 'ar') ? saved : 'ar';
+    if (saved === 'en' || saved === 'fr' || saved === 'ar') return saved;
+    // Detect browser language
+    const browserLang = (navigator.language || navigator.languages?.[0] || '').split('-')[0].toLowerCase();
+    if (browserLang === 'fr') return 'fr';
+    if (browserLang === 'en') return 'en';
+    if (browserLang === 'ar') return 'ar';
+    return 'ar'; // fallback
   });
 
   // Helper to check if language is RTL
