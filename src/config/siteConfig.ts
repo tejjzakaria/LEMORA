@@ -14,8 +14,8 @@ export const siteConfig = {
   // ===== CONTACT INFORMATION =====
   contact: {
     email: "contact@FLORIYAcosmetics.com",
-    phone: "+212 607948070",
-    whatsapp: "+212607948070", // No spaces or special characters
+    phone: "+212 727786179",
+    whatsapp: "+212727786179", // No spaces or special characters
     address: {
       street: "123 Beauty Avenue",
       city: "Casablanca",
